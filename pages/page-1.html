@@ -6,21 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Calzados LuAnd</title>
    	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-	<link rel="stylesheet" href="../style/style.css"> 
+	<link rel="stylesheet" href="../scss.scss/sass.css"> 
 </head>
-    <body>
+<!-- inicio de contenedor General -->
+    <body class="contenedor__p1">
+		<!-- logo -->
+		<div class="logo__img">
+			<a href="../indexCopy.html"><img src="../img/logo.png" alt="logo" class=""></a>
+		</div>
 		<!-- header -->
-		<header class="bg-light text-white py-3">
-		<div class="container">
-			<a href="../index.html"><img src="../img/logo.png" alt="logo" class="logo"></a>
-			<h1><a href="../index.html">LuAnd Calzados</a></h1>
-<!-- nav -->
-			<nav class="navbar navbar-expand-lg bg-primary navMenu_mujer" data-bs-theme="dark">
+		<header class="bg-light text-white py-3 header__cabecera">
+			<h1><a href="../indexCopy.html">LuAnd Calzados</a></h1>
+		</header>
+		<!-- nav -->
+			
+		<nav class="navbar navbar-expand-lg bg-primary navMenu_mujer" data-bs-theme="dark">
     <div class="container-fluid">
+		<button class="navbar-toggler nav__Mujer__btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="true" aria-label="Toggle navigation">
+        <span class="nav__Mujer__span">Menu</span>
+      </button>
       <div class="collapse navbar-collapse" id="navbarColor02">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="../index.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Inicio</font></font></a>
+            <a class="nav-link" aria-current="page" href="../indexCopy.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Inicio</font></font></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="../pages/page-1.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Seccion Damas</font></font></a>
@@ -32,249 +40,362 @@
             <a class="nav-link" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nosotros</font></font></a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
+		<form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="¿que necesitas?" aria-label="Buscar">
-          <button class="btn btn-outline-light" type="submit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Buscar Productos</font></font></button>
+          <button class="btn btn-outline-light" type="submit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Buscar</font></font></button>
         </form>
       </div>
     </div>
-  </nav>
-</div>	
+	</nav>
 <!-- Barra de Navegación Interna -->
-	<div class="barra-m-horizontal">
+<section class="barra__interna_mujeres">
+	<div class="secciones">
   <a href="#section1" class="seccion activo">Zapatillas</a>
   <a href="#section2" class="seccion">Zapatos</a>
   <a href="#section3" class="seccion">Sandalias</a>
   <a href="#section4" class="seccion">Botas</a>
 </div>
-	</header>
-	
+</section>
+			
+	<!-- carrusel  -->
+	<div id="carouselExampleCaptions" class="carousel slide">
+ 	<div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <!-- Primera Imagen -->
+  <div class="carousel-inner imagenesCarrusel"> 
+    <div class="carousel-item active">
+      <img src="../img/IMG-1.jpeg" class="d-block mx-auto" style="width: 30%; height: 50%;" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Nike</h5>
+        <p>Una zapatilla muy comoda, ideal para realizar deportes</p>
+      </div>
+    </div>
+	<!-- Segunda Imagen -->
+    <div class="carousel-item imagenesCarrusel">
+      <img src="../img/IMG-6.jpeg" class="d-block mx-auto" style="width: 30%; height: 50%;" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Nike Fem</h5>
+        <p>La mas buscada de la categoria</p>
+      </div>
+    </div>
+	<!-- Tercera Imagen -->
+    <div class="carousel-item imagenesCarrusel">
+      <img src="../img/IMG-7.jpeg" class="d-block mx-auto" style="width: 30%; height: 50%;" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>New Balance</h5>
+        <p>Este Producto ofrece comodidad y calidad.</p>
+      </div>
+    </div>
+  </div>
+	</div>	
 
 	<!-- Sección de la Galería -->
-	<main>
-	<section id="section1" class="gallery">
-		<div class="contenidoCard">
+	<main class="main">
+	
+	<section id="section1" class="main__galeria">
+		<div class="galeria__card">
+			<div class="card__contenido">
 			<img src="../img/IMG-3.jpeg" alt="" srcset="">
-				<p>Adidas Boss</p>
-				<p>ARS $16.000</p>
-				
+			<h5>Adidas</h5>
+				<p class="card__text">Boss</p>
+				<p class="card__precio">ARS $16.000</p>	
 			</div>
-		<div class="contenidoCard">
-			<img src="../img/IMG-6.jpeg" alt="" srcset="">
-				<p>Adidas Boss</p>
-				<p>$16.000</p>
-			</div>
-			<div class="contenidoCard">
-			<img src="../img/IMG-7.jpeg" alt="" srcset="">
-				<p>Adidas Boss</p>
-				<p>$16.000</p>
-			</div>
-			<div class="contenidoCard">
-			<img src="../img/IMG-1.jpeg" alt="" srcset="">
-				<p>Adidas Boss</p>
-				<p>$16.000</p>
-			</div>
-			<div class="contenidoCard">
-			<img src="../img/IMG-1.jpeg" alt="" srcset="">
-				<p>Adidas Boss</p>
-				<p>$16.000</p>
-			</div>
-		<div class="contenidoCard">
+		</div>
+		<div class="galeria__card">
+			<div class="card__contenido">
 			<img src="../img/IMG-3.jpeg" alt="" srcset="">
-				<p>Adidas Boss</p>
-				<p>$16.000</p>
+			<h5>Adidas</h5>
+				<p class="card__text">Boss</p>
+				<p class="card__precio">ARS $16.000</p>	
 			</div>
-		<div class="contenidoCard">
-			<img src="../img/IMG-6.jpeg" alt="" srcset="">
-				<p>Adidas Boss</p>
-				<p>$16.000</p>
+		</div>
+			<div class="galeria__card">
+			<div class="card__contenido">
+			<img src="../img/IMG-3.jpeg" alt="" srcset="">
+			<h5>Adidas</h5>
+				<p class="card__text">Boss</p>
+				<p class="card__precio">ARS $16.000</p>	
 			</div>
-			<div class="contenidoCard">
-			<img src="../img/IMG-7.jpeg" alt="" srcset="">
-				<p>Adidas Boss</p>
-				<p>$16.000</p>
+		</div>
+		<div class="galeria__card">
+			<div class="card__contenido">
+			<img src="../img/IMG-3.jpeg" alt="" srcset="">
+			<h5>Adidas</h5>
+				<p class="card__text">Boss</p>
+				<p class="card__precio">ARS $16.000</p>	
 			</div>
-			<div class="contenidoCard">
-			<img src="../img/IMG-1.jpeg" alt="" srcset="">
-				<p>Adidas Boss</p>
-				<p>$16.000</p>
+		</div>
+		<div class="galeria__card">
+			<div class="card__contenido">
+			<img src="../img/IMG-3.jpeg" alt="" srcset="">
+			<h5>Adidas</h5>
+				<p class="card__text">Boss</p>
+				<p class="card__precio">ARS $16.000</p>	
 			</div>
-			<div class="contenidoCard">
-			<img src="../img/IMG-1.jpeg" alt="" srcset="">
-				<p>Adidas Boss</p>
-				<p>$16.000</p>
+		</div>
+		<div class="galeria__card">
+			<div class="card__contenido">
+			<img src="../img/IMG-3.jpeg" alt="" srcset="">
+			<h5>Adidas</h5>
+				<p class="card__text">Boss</p>
+				<p class="card__precio">ARS $16.000</p>	
 			</div>
-		
-    </section>
+		</div>
+		<div class="galeria__card">
+			<div class="card__contenido">
+			<img src="../img/IMG-3.jpeg" alt="" srcset="">
+			<h5>Adidas</h5>
+				<p class="card__text">Boss</p>
+				<p class="card__precio">ARS $16.000</p>	
+			</div>
+		</div>
+		<div class="galeria__card">
+			<div class="card__contenido">
+			<img src="../img/IMG-3.jpeg" alt="" srcset="">
+			<h5>Adidas</h5>
+				<p class="card__text">Boss</p>
+				<p class="card__precio">ARS $16.000</p>	
+			</div>
+		</div>
+		<div class="galeria__card">
+			<div class="card__contenido">
+			<img src="../img/IMG-3.jpeg" alt="" srcset="">
+			<h5>Adidas</h5>
+				<p class="card__text">Boss</p>
+				<p class="card__precio">ARS $16.000</p>	
+			</div>
+		</div>
+	</section>
+	<section id="section2" class="main__galeria">
+		<div class="card__contenido">
+			<img src="../img/IMG-3.jpeg" alt="" srcset="">
+			<h5>Adidas</h5>
+				<p class="card__text">Boss</p>
+				<p class="card__precio">ARS $16.000</p>	
+			</div>
+		</div>
+		<div class="card__contenido">
+			<img src="../img/IMG-3.jpeg" alt="" srcset="">
+			<h5>Adidas</h5>
+				<p class="card__text">Boss</p>
+				<p class="card__precio">ARS $16.000</p>	
+			</div>
+		</div>
+		<div class="card__contenido">
+			<img src="../img/IMG-3.jpeg" alt="" srcset="">
+			<h5>Adidas</h5>
+				<p class="card__text">Boss</p>
+				<p class="card__precio">ARS $16.000</p>	
+			</div>
+		</div>
+		<div class="card__contenido">
+			<img src="../img/IMG-3.jpeg" alt="" srcset="">
+			<h5>Adidas</h5>
+				<p class="card__text">Boss</p>
+				<p class="card__precio">ARS $16.000</p>	
+			</div>
+		</div>
+		<div class="card__contenido">
+			<img src="../img/IMG-3.jpeg" alt="" srcset="">
+			<h5>Adidas</h5>
+				<p class="card__text">Boss</p>
+				<p class="card__precio">ARS $16.000</p>	
+			</div>
+		</div>
+		<div class="card__contenido">
+			<img src="../img/IMG-3.jpeg" alt="" srcset="">
+			<h5>Adidas</h5>
+				<p class="card__text">Boss</p>
+				<p class="card__precio">ARS $16.000</p>	
+			</div>
+		</div>
+		<div class="card__contenido">
+			<img src="../img/IMG-3.jpeg" alt="" srcset="">
+			<h5>Adidas</h5>
+				<p class="card__text">Boss</p>
+				<p class="card__precio">ARS $16.000</p>	
+			</div>
+		</div>
+		<div class="card__contenido">
+			<img src="../img/IMG-3.jpeg" alt="" srcset="">
+			<h5>Adidas</h5>
+				<p class="card__text">Boss</p>
+				<p class="card__precio">ARS $16.000</p>	
+			</div>
+		</div>
+		<div class="card__contenido">
+			<img src="../img/IMG-3.jpeg" alt="" srcset="">
+			<h5>Adidas</h5>
+				<p class="card__text">Boss</p>
+				<p class="card__precio">ARS $16.000</p>	
+			</div>
+		</div>
+		<div class="card__contenido">
+			<img src="../img/IMG-3.jpeg" alt="" srcset="">
+			<h5>Adidas</h5>
+				<p class="card__text">Boss</p>
+				<p class="card__precio">ARS $16.000</p>	
+			</div>
+		</div>
+		 </section>
 
-	<section id="section2" class="gallery">
-		<div class="contenidoCard">
+	<section id="section3" class="main__galeria">
+		<div class="card__contenido">
 			<img src="../img/IMG-3.jpeg" alt="" srcset="">
-				<p>Adidas Boss</p>
-				<p>$16.000</p>
+			<h5>Adidas</h5>
+				<p class="card__text">Boss</p>
+				<p class="card__precio">ARS $16.000</p>	
 			</div>
-		<div class="contenidoCard">
-			<img src="../img/IMG-6.jpeg" alt="" srcset="">
-				<p>Adidas Boss</p>
-				<p>$16.000</p>
-			</div>
-			<div class="contenidoCard">
-			<img src="../img/IMG-7.jpeg" alt="" srcset="">
-				<p>Adidas Boss</p>
-				<p>$16.000</p>
-			</div>
-			<div class="contenidoCard">
-			<img src="../img/IMG-1.jpeg" alt="" srcset="">
-				<p>Adidas Boss</p>
-				<p>$16.000</p>
-			</div>
-			<div class="contenidoCard">
-			<img src="../img/IMG-1.jpeg" alt="" srcset="">
-				<p>Adidas Boss</p>
-				<p>$16.000</p>
-			</div>
-		<div class="contenidoCard">
+		</div>
+		<div class="card__contenido">
 			<img src="../img/IMG-3.jpeg" alt="" srcset="">
-				<p>Adidas Boss</p>
-				<p>$16.000</p>
+			<h5>Adidas</h5>
+				<p class="card__text">Boss</p>
+				<p class="card__precio">ARS $16.000</p>	
 			</div>
-		<div class="contenidoCard">
-			<img src="../img/IMG-6.jpeg" alt="" srcset="">
-				<p>Adidas Boss</p>
-				<p>$16.000</p>
+		</div>
+		<div class="card__contenido">
+			<img src="../img/IMG-3.jpeg" alt="" srcset="">
+			<h5>Adidas</h5>
+				<p class="card__text">Boss</p>
+				<p class="card__precio">ARS $16.000</p>	
 			</div>
-			<div class="contenidoCard">
-			<img src="../img/IMG-7.jpeg" alt="" srcset="">
-				<p>Adidas Boss</p>
-				<p>$16.000</p>
+		</div>
+		<div class="card__contenido">
+			<img src="../img/IMG-3.jpeg" alt="" srcset="">
+			<h5>Adidas</h5>
+				<p class="card__text">Boss</p>
+				<p class="card__precio">ARS $16.000</p>	
 			</div>
-			<div class="contenidoCard">
-			<img src="../img/IMG-1.jpeg" alt="" srcset="">
-				<p>Adidas Boss</p>
-				<p>$16.000</p>
+		</div>
+		<div class="card__contenido">
+			<img src="../img/IMG-3.jpeg" alt="" srcset="">
+			<h5>Adidas</h5>
+				<p class="card__text">Boss</p>
+				<p class="card__precio">ARS $16.000</p>	
 			</div>
-			<div class="contenidoCard">
-			<img src="../img/IMG-1.jpeg" alt="" srcset="">
-				<p>Adidas Boss</p>
-				<p>$16.000</p>
+		</div>
+		<div class="card__contenido">
+			<img src="../img/IMG-3.jpeg" alt="" srcset="">
+			<h5>Adidas</h5>
+				<p class="card__text">Boss</p>
+				<p class="card__precio">ARS $16.000</p>	
 			</div>
-		
+		</div>
+		<div class="card__contenido">
+			<img src="../img/IMG-3.jpeg" alt="" srcset="">
+			<h5>Adidas</h5>
+				<p class="card__text">Boss</p>
+				<p class="card__precio">ARS $16.000</p>	
+			</div>
+		</div>
+		<div class="card__contenido">
+			<img src="../img/IMG-3.jpeg" alt="" srcset="">
+			<h5>Adidas</h5>
+				<p class="card__text">Boss</p>
+				<p class="card__precio">ARS $16.000</p>	
+			</div>
+		</div>
+		<div class="card__contenido">
+			<img src="../img/IMG-3.jpeg" alt="" srcset="">
+			<h5>Adidas</h5>
+				<p class="card__text">Boss</p>
+				<p class="card__precio">ARS $16.000</p>	
+			</div>
+		</div>
+		<div class="card__contenido">
+			<img src="../img/IMG-3.jpeg" alt="" srcset="">
+			<h5>Adidas</h5>
+				<p class="card__text">Boss</p>
+				<p class="card__precio">ARS $16.000</p>	
+			</div>
+		</div>
     </section>
-
-	<section id="section3" class="gallery">
-		<div class="contenidoCard">
+   <section id="section4" class="main__galeria">
+		<div class="card__contenido">
 			<img src="../img/IMG-3.jpeg" alt="" srcset="">
-				<p>Adidas Boss</p>
-				<p>$16.000</p>
+			<h5>Adidas</h5>
+				<p class="card__text">Boss</p>
+				<p class="card__precio">ARS $16.000</p>	
 			</div>
-		<div class="contenidoCard">
-			<img src="../img/IMG-6.jpeg" alt="" srcset="">
-				<p>Adidas Boss</p>
-				<p>$16.000</p>
-			</div>
-			<div class="contenidoCard">
-			<img src="../img/IMG-7.jpeg" alt="" srcset="">
-				<p>Adidas Boss</p>
-				<p>$16.000</p>
-			</div>
-			<div class="contenidoCard">
-			<img src="../img/IMG-1.jpeg" alt="" srcset="">
-				<p>Adidas Boss</p>
-				<p>$16.000</p>
-			</div>
-			<div class="contenidoCard">
-			<img src="../img/IMG-1.jpeg" alt="" srcset="">
-				<p>Adidas Boss</p>
-				<p>$16.000</p>
-			</div>
-		<div class="contenidoCard">
+		</div>
+		<div class="card__contenido">
 			<img src="../img/IMG-3.jpeg" alt="" srcset="">
-				<p>Adidas Boss</p>
-				<p>$16.000</p>
+			<h5>Adidas</h5>
+				<p class="card__text">Boss</p>
+				<p class="card__precio">ARS $16.000</p>	
 			</div>
-		<div class="contenidoCard">
-			<img src="../img/IMG-6.jpeg" alt="" srcset="">
-				<p>Adidas Boss</p>
-				<p>$16.000</p>
-			</div>
-			<div class="contenidoCard">
-			<img src="../img/IMG-7.jpeg" alt="" srcset="">
-				<p>Adidas Boss</p>
-				<p>$16.000</p>
-			</div>
-			<div class="contenidoCard">
-			<img src="../img/IMG-1.jpeg" alt="" srcset="">
-				<p>Adidas Boss</p>
-				<p>$16.000</p>
-			</div>
-			<div class="contenidoCard">
-			<img src="../img/IMG-1.jpeg" alt="" srcset="">
-				<p>Adidas Boss</p>
-				<p>$16.000</p>
-			</div>
-		
-    </section>
-   <section id="section4" class="gallery">
-		<div class="contenidoCard">
+		</div>
+		<div class="card__contenido">
 			<img src="../img/IMG-3.jpeg" alt="" srcset="">
-				<p>Adidas Boss</p>
-				<p>$16.000</p>
+			<h5>Adidas</h5>
+				<p class="card__text">Boss</p>
+				<p class="card__precio">ARS $16.000</p>	
 			</div>
-		<div class="contenidoCard">
-			<img src="../img/IMG-6.jpeg" alt="" srcset="">
-				<p>Adidas Boss</p>
-				<p>$16.000</p>
-			</div>
-			<div class="contenidoCard">
-			<img src="../img/IMG-7.jpeg" alt="" srcset="">
-				<p>Adidas Boss</p>
-				<p>$16.000</p>
-			</div>
-			<div class="contenidoCard">
-			<img src="../img/IMG-1.jpeg" alt="" srcset="">
-				<p>Adidas Boss</p>
-				<p>$16.000</p>
-			</div>
-			<div class="contenidoCard">
-			<img src="../img/IMG-1.jpeg" alt="" srcset="">
-				<p>Adidas Boss</p>
-				<p>$16.000</p>
-			</div>
-		<div class="contenidoCard">
+		</div>
+		<div class="card__contenido">
 			<img src="../img/IMG-3.jpeg" alt="" srcset="">
-				<p>Adidas Boss</p>
-				<p>$16.000</p>
+			<h5>Adidas</h5>
+				<p class="card__text">Boss</p>
+				<p class="card__precio">ARS $16.000</p>	
 			</div>
-		<div class="contenidoCard">
-			<img src="../img/IMG-6.jpeg" alt="" srcset="">
-				<p>Adidas Boss</p>
-				<p>$16.000</p>
+		</div>
+		<div class="card__contenido">
+			<img src="../img/IMG-3.jpeg" alt="" srcset="">
+			<h5>Adidas</h5>
+				<p class="card__text">Boss</p>
+				<p class="card__precio">ARS $16.000</p>	
 			</div>
-			<div class="contenidoCard">
-			<img src="../img/IMG-7.jpeg" alt="" srcset="">
-				<p>Adidas Boss</p>
-				<p>$16.000</p>
+		</div>
+		<div class="card__contenido">
+			<img src="../img/IMG-3.jpeg" alt="" srcset="">
+			<h5>Adidas</h5>
+				<p class="card__text">Boss</p>
+				<p class="card__precio">ARS $16.000</p>	
 			</div>
-			<div class="contenidoCard">
-			<img src="../img/IMG-1.jpeg" alt="" srcset="">
-				<p>Adidas Boss</p>
-				<p>$16.000</p>
+		</div>
+		<div class="card__contenido">
+			<img src="../img/IMG-3.jpeg" alt="" srcset="">
+			<h5>Adidas</h5>
+				<p class="card__text">Boss</p>
+				<p class="card__precio">ARS $16.000</p>	
 			</div>
-			<div class="contenidoCard">
-			<img src="../img/IMG-1.jpeg" alt="" srcset="">
-				<p>Adidas Boss</p>
-				<p>$16.000</p>
+		</div>
+		<div class="card__contenido">
+			<img src="../img/IMG-3.jpeg" alt="" srcset="">
+			<h5>Adidas</h5>
+				<p class="card__text">Boss</p>
+				<p class="card__precio">ARS $16.000</p>	
 			</div>
-		
+		</div>
+		<div class="card__contenido">
+			<img src="../img/IMG-3.jpeg" alt="" srcset="">
+			<h5>Adidas</h5>
+				<p class="card__text">Boss</p>
+				<p class="card__precio">ARS $16.000</p>	
+			</div>
+		</div>
+		<div class="card__contenido">
+			<img src="../img/IMG-3.jpeg" alt="" srcset="">
+			<h5>Adidas</h5>
+				<p class="card__text">Boss</p>
+				<p class="card__precio">ARS $16.000</p>	
+			</div>
+		</div>
     </section>
 	</main>
+	<!-- fin de main -->
+	<section class="section3">
 	<div class="btn-wp">
 	<a href="http://web.whatsapp.com/"><img src="../img/logo__whatsapp.jpg" alt="whatsApp"></a>
 	</div>
-	<footer class="bg-light py-4 pie"> 
-		<div class="container text-center py-5">
-			<p>Información de contacto: Email: luccasmandrada1994@gmail.com | Teléfono: 3813321379</p>
-			<p>Derechos reservados &copy; 2023 LuAnd Calzados</p>
+	</section>
+	<footer class="bg-light py-4 footer"> 
+		<div class="footer__contenido">
+			<p>Información de contacto: luccasmandrada1994@gmail.com | Teléfono: <a href="https://wa.me/qr/SKZR6ATJGOEIM1">3813321379</a> --- Derechos reservados &copy; 2023 LuAnd Calzados</p>
 		</div>
 	</footer>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
