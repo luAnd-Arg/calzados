@@ -7,19 +7,23 @@
     width: 100vw;
     height:20vh;
     margin: 0% auto;
+    font-size: 20px;
+   
     
       ul{
+        background:none;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 10%;
         margin: 0% auto;
         width: 100vw;
-        background-color: rgb(255, 5, 5);
         
           li{
-            background-color: aliceblue;
+            background:none;
+           
             width: 100vw;
+            font-family:'Smokum', cursive;
             height: 10vh;
             display: flex;
             justify-content: center;
@@ -27,20 +31,23 @@
             list-style: none;
             text-align: center;
             .seccion__inicio{
-              color: orange;
+              font: bold;
+              font-family:'Smokum', cursive;
+              color: rgb(27, 171, 187);
               &:hover{
-                 color: rgb(255, 255, 255);
+                
                  transform: scale(1.1);
                  border: 1px solid rgb(255, 255, 255);
                  border-top: none;
                  border-right: none;
                  border-radius: 1px;
-                 background-color: rgb(66, 64, 64);
               }
                  
             }
             .seccion__damas{
-              color: orange;
+              color: rgb(187, 0, 255);
+              font: bold;
+              font-family:'Smokum', cursive;
               &:hover{
                 color: rgb(255, 5, 255);
                 transform: scale(1.1);
@@ -48,30 +55,32 @@
                  border-top: none;
                  border-right: none;
                  border-radius: 1px;
-                 background-color: rgb(66, 64, 64);
               }  
             }
             .seccion__caballeros{
-              color:orange;
+              color:rgb(255, 255, 255);
+              font: bold;
+              font-family:'Smokum', cursive;
               &:hover{
-                color: rgb(121, 113, 113);
+                color: rgb(255, 255, 255);
                 transform: scale(1.1);
                 border: 1px solid rgb(255, 255, 255);
                  border-top: none;
                  border-right: none;
                  border-radius: 1px;
-                 background-color: rgb(66, 64, 64);
               }
             }
             .seccion__nosotros{
-              color: orange;
+              font: bold;
+              font-family:'Smokum', cursive;
+              color:cadetblue;
               &:hover{color: chartreuse;
                 transform: scale(1.1);
                 border: 1px solid rgb(255, 255, 255);
                  border-top: none;
                  border-right: none;
                  border-radius: 1px;
-                 background-color: rgb(66, 64, 64);
+                 
               } 
             }
                 a {

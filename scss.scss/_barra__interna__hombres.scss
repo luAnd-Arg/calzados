@@ -1,0 +1,74 @@
+.barra__interna__hombres {
+    background-color: #8e8e8e(169, 169, 169);
+    justify-content:end;
+    align-items: end;
+    background-image: url(../img/hombre-comprando.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y:21%;
+    padding-left:0%;
+    padding-right: 0%;    
+    padding-top: 0%;
+    padding-bottom: 0%;
+    border-radius: 1px;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    margin-left: 50px auto;
+    width: 100vw;
+    height: 50%;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    animation:alternate 5s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+   
+       
+    .seccion__hombres{
+        background-color: #010000;
+        margin: 0 auto;
+        width: max-content;
+        height: auto;
+        position: relative;
+        top: 20%;
+        left: 10%;
+         
+    }  
+      .seccion__a{
+            display: flex;
+            flex-direction: column;
+            color: #00ff62;
+            text-decoration: none; 
+             font-size: 1rem;
+             padding: 2vh;
+             margin: 1%;
+             width: max-content;
+             height: auto;
+             position: relative;
+             top: 0%;
+             left: 0%;
+             animation: 2s;
+             animation: movimiento;
+             animation-iteration-count: infinite;
+                        &:hover{
+                    transform: scale(1.01) ;
+                    color: #9bfd59 ;
+                    background-color: #010101;
+                    width: 100%;
+              }                    
+     }
+}  
+@keyframes movimiento {
+    0%{
+      border-top: solid 5px red;
+    }
+    25%{
+      border-left: 5px solid blue;
+    }
+    50%{
+      border-bottom: 5px solid green;
+    }
+    100%{
+      border-right: 5px solid yellow;
+    }
+  }

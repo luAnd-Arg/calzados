@@ -1,6 +1,7 @@
 /*ESTILOS DE LA SECCION HEADER__CABECERA*/
 .header__cabecera { 
    grid-area: header__cabecera;
+   background-color: black;
    width: 100vw;
    height: 20vh;
    position: relative;
@@ -29,6 +30,9 @@
            text-decoration: none;
            width: auto;
            height: auto;
+           animation-duration: 5s;
+           animation-name: aparecer;
+           animation-iteration-count: infinite;
               &:hover {
             color: chartreuse;
             background: black;
@@ -37,3 +41,11 @@
           }
       }
 }
+@keyframes aparecer {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+} 

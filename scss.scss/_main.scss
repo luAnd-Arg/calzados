@@ -1,6 +1,8 @@
 .main { 
+  background-image: url(../img/tunel.jpg.jpg);
   grid-area: main;
   margin: 0% auto;
+  margin-top: 10vh;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -16,10 +18,15 @@
        flex-wrap: wrap;
        height: auto;
        width: 100vw;
-       background-image: url(../img/fondo-galeria.jpg);
+        background-image: url();
        background-repeat: no-repeat;
        background-size: cover;
-      
+        h2{
+          color: wheat;
+          font-size: medium;
+          font-family: fantasy;
+          font-size: 5rem;
+        } 
        .galeria__card{
     
             text-align: center;
@@ -32,10 +39,19 @@
       }
         
         img{
-          margin: 0% auto;
+          margin: auto;
+          padding: auto;
           width: 320px;
-          height: 480px;
+          height: 400px;
           border: 5px solid white;
+          transition: all 1s;
+               &:hover{
+                    transform: translateY(50deg);
+                    transform: scale(1.01);
+                    width: 400px;
+                    height: 500px;
+                    
+               }
         }
           .card__contenido{
           

@@ -9,14 +9,14 @@
 	<link rel="stylesheet" href="../scss.scss/sass.css">
 </head>
 <!-- inicio de contenedor General -->
-    <body class="contenedor__p1">
+    <body class="contenedor__p">
 		<!-- logo -->
 		<div class="logo__img">
-			<a href="../indexCopy.html"><img src="../img/logo.png" alt="logo" class=""></a>
+			<a href="../index.html"><img src="../img/logo.png" alt="logo" class=""></a>
 		</div>
 		<!-- header -->
-		<header class="bg-light text-white py-3 header__cabecera">
-			<h1><a href="../indexCopy.html">LuAnd Calzados</a></h1>
+		<header class="header__cabecera">
+			<h1><a href="../index.html">LuAnd Calzados</a></h1>
 		</header>
 		<!-- nav -->	
 		<nav class="navbar navbar-expand-lg bg-primary navMenu_mujer" data-bs-theme="dark">
@@ -25,18 +25,18 @@
         <span class="nav__Mujer__span">Menu</span>
       </button>
       <div class="collapse navbar-collapse" id="navbarColor02">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="../indexCopy.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Inicio</font></font></a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav__mujer__ul">
+          <li class="nav-item nav__mujer__li">
+            <a class="nav-link" aria-current="page" href="../index.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Inicio</font></font></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item nav__mujer__li">
             <a class="nav-link" href="../pages/page-1.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Seccion Damas</font></font></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item nav__mujer__li">
             <a class="nav-link" href="../pages/page-2.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Seccion Caballeros</font></font></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nosotros</font></font></a>
+          <li class="nav-item nav__mujer__li">
+            <a class="nav-link" href="../pages/page-3.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nosotros</font></font></a>
           </li>
         </ul>
 		<form class="d-flex" role="search">
@@ -47,45 +47,51 @@
     </div>
 	</nav>
 <!-- Barra de Navegación Interna -->
-<section class="barra__interna_mujeres">
-	<div class="secciones">
-  <a href="#section1" class="seccion">Zapatillas</a>
-  <a href="#section2" class="seccion">Zapatos</a>
-  <a href="#section3" class="seccion">Sandalias</a>
-  <a href="#section4" class="seccion">Botas</a>
+<section class="barra__interna__mujeres">
+	<div class="secciones__mujeres">
+  <a href="#section1" class="seccion__mujeres">Zapatillas</a>
+  <a href="#section2" class="seccion__mujeres">Zapatos</a>
+  <a href="#section3" class="seccion__mujeres">Sandalias</a>
+  <a href="#section4" class="seccion__mujeres">Botas</a>
 </div>
 </section>
 			
 	<!-- carrusel  -->
-	<div id="carouselExampleCaptions" class="carousel slide">
+	<div id="carouselExampleCaptions" class="carousel slide carrusel__propio">
  	<div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
   <!-- Primera Imagen -->
-  <div class="carousel-inner imagenesCarrusel"> 
+  <div class="carousel-inner imagenes__carrusel"> 
     <div class="carousel-item active">
       <img src="../img/IMG-1.jpeg" class="d-block mx-auto" style="width: 30%; height: 50%;" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Nike</h5>
-        <p>Una zapatilla muy comoda, ideal para realizar deportes</p>
+      <div class="carousel-caption d-none d-md-block carrusel__propio__contenido">
+		<div class="descripcion__carrusel">
+			<p class="title__carrusel">Nike Fem</p>
+			<p class="descripcion__carrusel">La mas buscada de la categoria</p>
+		</div>
       </div>
     </div>
 	<!-- Segunda Imagen -->
-    <div class="carousel-item imagenesCarrusel">
+    <div class="carousel-item imagenes__carrusel">
       <img src="../img/IMG-6.jpeg" class="d-block mx-auto" style="width: 30%; height: 50%;" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Nike Fem</h5>
-        <p>La mas buscada de la categoria</p>
+      <div class="carousel-caption d-none d-md-block carrusel__propio__contenido">
+		<div class="descripcion__carrusel">
+			<p class="title__carrusel">Nike Fem</p>
+			<p class="descripcion__carrusel">La mas buscada de la categoria</p>
+		</div>
       </div>
     </div>
 	<!-- Tercera Imagen -->
-    <div class="carousel-item imagenesCarrusel">
+    <div class="carousel-item imagenes__carrusel">
       <img src="../img/IMG-7.jpeg" class="d-block mx-auto" style="width: 30%; height: 50%;" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>New Balance</h5>
-        <p>Este Producto ofrece comodidad y calidad.</p>
+      <div class="carousel-caption d-none d-md-block carrusel__propio__contenido">
+        <div class="descripcion__carrusel">
+			<p class="title__carrusel">Nike Fem</p>
+			<p class="descripcion__carrusel">La mas buscada de la categoria</p>
+		</div>
       </div>
     </div>
   </div>
@@ -93,7 +99,7 @@
 
 	<!-- Sección de la Galería -->
 	<main class="main">
-	<section id="section1" class="main__galeria">
+	<section id="section1" class="main__galeria__mujer">
 		<div class="galeria__card">
 			<div class="card__contenido">
 			<img src="../img/IMG-3.jpeg" alt="" srcset="">
@@ -167,7 +173,7 @@
 			</div>
 		</div>
 	</section>
-	<section id="section2" class="main__galeria">
+	<section id="section2" class="main__galeria__mujer">
 		<div class="card__contenido">
 			<img src="../img/IMG-3.jpeg" alt="" srcset="">
 			<h5>Adidas</h5>
@@ -240,7 +246,7 @@
 		</div>
 		 </section>
 
-	<section id="section3" class="main__galeria">
+	<section id="section3" class="main__galeria__mujer">
 		<div class="card__contenido">
 			<img src="../img/IMG-3.jpeg" alt="" srcset="">
 			<h5>Adidas</h5>
@@ -312,7 +318,7 @@
 			</div>
 		</div>
     </section>
-   <section id="section4" class="main__galeria">
+   <section id="section4" class="main__galeria__mujer">
 		<div class="card__contenido">
 			<img src="../img/IMG-3.jpeg" alt="" srcset="">
 			<h5>Adidas</h5>

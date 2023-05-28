@@ -1,4 +1,5 @@
-.logo__img { 
+.logo__img {
+    background-color: black; 
     grid-area: logo__img !important;
     width:100vw !important;
     height: 3vh !important;
@@ -9,15 +10,21 @@
     z-index: 1 !important;
          img{
             border: 1px solid black !important;
+            background-color: black;
             border-radius: 50px !important;
             width: 20vw !important;
             height: 12vh !important;
             margin-top: 10px !important;
             margin-left: 50px !important;
             z-index: 1 !important;
+            animation-duration: 10s;
+            animation-name: aparecer;
+            animation-iteration-count: infinite;
             &:hover{
               transform: scale(1.01) !important;
               border-color: orange !important;
+              
             }           
         }
   }
+  

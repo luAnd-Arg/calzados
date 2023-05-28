@@ -1,0 +1,44 @@
+.carrusel__propio{
+    height: auto;
+    width: 100vw;
+    background-image: url(../img/detailed_hand_painted_pink_watercolour_background_0509.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y:center;
+    display: flex;  
+    justify-items: center;
+    justify-content: center;
+    align-items: center;    
+}
+    .imagenes__carrusel img{
+        border-radius: 1vh 100vw;
+        height: 80vh;
+        width: 30vw;    
+        
+    }
+    .carrusel__propio__contenido {
+        height: auto;
+        width: auto;
+        .descripcion__carrusel{
+                .title__carrusel{
+                     color: rgb(0, 0, 0);
+                                    background-color: rgba(240, 248, 255, 0.381);
+                                    width: max-content;
+                                    padding: 1%;
+                                    margin-left:0% auto;
+                                    border-radius: 50px;
+                                    background-image: url(../img/5607231.jpg);
+                }
+                .descripcion__carrusel{
+                                    color: rgb(0, 0, 0);
+                                    background-color: rgba(240, 248, 255, 0.381);
+                                    width: max-content;
+                                    padding: 1%;
+                                    margin-left:0% auto;
+                                    border-radius: 50px;
+                                    background-image: url(../img/5607231.jpg);
+            }
+        }
+    }                    
+   

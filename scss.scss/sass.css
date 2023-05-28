@@ -9,6 +9,7 @@
 /*ESTILOS DE LA SECCION HEADER__CABECERA*/
 .header__cabecera {
   grid-area: header__cabecera;
+  background-color: black;
   width: 100vw;
   height: 20vh;
   position: relative;
@@ -37,6 +38,9 @@
   text-decoration: none;
   width: auto;
   height: auto;
+  animation-duration: 5s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
 }
 .header__cabecera h1 a:hover {
   color: chartreuse;
@@ -44,6 +48,14 @@
   transform: scale(1.02);
 }
 
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /*ESTILOS DEL GRID*/
 .container__general {
   display: grid;
@@ -55,13 +67,15 @@
 }
 
 .container__general {
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  background-image: url(../img/tunel.jpg.jpg);
+  background-repeat: round;
   width: 100vw;
   height: 100vh;
 }
 
 /*ESTILOS DE SECCION LOGO*/
 .logo__img {
+  background-color: black;
   grid-area: logo__img !important;
   width: 100vw !important;
   height: 3vh !important;
@@ -73,12 +87,16 @@
 }
 .logo__img img {
   border: 1px solid black !important;
+  background-color: black;
   border-radius: 50px !important;
   width: 20vw !important;
   height: 12vh !important;
   margin-top: 10px !important;
   margin-left: 50px !important;
   z-index: 1 !important;
+  animation-duration: 10s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
 }
 .logo__img img:hover {
   transform: scale(1.01) !important;
@@ -95,19 +113,21 @@
   width: 100vw;
   height: 20vh;
   margin: 0% auto;
+  font-size: 20px;
 }
 .nav__menu ul {
+  background: none;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 10%;
   margin: 0% auto;
   width: 100vw;
-  background-color: rgb(255, 5, 5);
 }
 .nav__menu ul li {
-  background-color: aliceblue;
+  background: none;
   width: 100vw;
+  font-family: "Smokum", cursive;
   height: 10vh;
   display: flex;
   justify-content: center;
@@ -116,19 +136,21 @@
   text-align: center;
 }
 .nav__menu ul li .seccion__inicio {
-  color: orange;
+  font: bold;
+  font-family: "Smokum", cursive;
+  color: rgb(27, 171, 187);
 }
 .nav__menu ul li .seccion__inicio:hover {
-  color: rgb(255, 255, 255);
   transform: scale(1.1);
   border: 1px solid rgb(255, 255, 255);
   border-top: none;
   border-right: none;
   border-radius: 1px;
-  background-color: rgb(66, 64, 64);
 }
 .nav__menu ul li .seccion__damas {
-  color: orange;
+  color: rgb(187, 0, 255);
+  font: bold;
+  font-family: "Smokum", cursive;
 }
 .nav__menu ul li .seccion__damas:hover {
   color: rgb(255, 5, 255);
@@ -137,22 +159,24 @@
   border-top: none;
   border-right: none;
   border-radius: 1px;
-  background-color: rgb(66, 64, 64);
 }
 .nav__menu ul li .seccion__caballeros {
-  color: orange;
+  color: rgb(255, 255, 255);
+  font: bold;
+  font-family: "Smokum", cursive;
 }
 .nav__menu ul li .seccion__caballeros:hover {
-  color: rgb(121, 113, 113);
+  color: rgb(255, 255, 255);
   transform: scale(1.1);
   border: 1px solid rgb(255, 255, 255);
   border-top: none;
   border-right: none;
   border-radius: 1px;
-  background-color: rgb(66, 64, 64);
 }
 .nav__menu ul li .seccion__nosotros {
-  color: orange;
+  font: bold;
+  font-family: "Smokum", cursive;
+  color: cadetblue;
 }
 .nav__menu ul li .seccion__nosotros:hover {
   color: chartreuse;
@@ -161,7 +185,6 @@
   border-top: none;
   border-right: none;
   border-radius: 1px;
-  background-color: rgb(66, 64, 64);
 }
 .nav__menu ul li a {
   text-decoration: none;
@@ -176,8 +199,10 @@
 
 /*INCIO DE ESTILO DE SECCION MAIN*/
 .main {
+  background-image: url(../img/tunel.jpg.jpg);
   grid-area: main;
   margin: 0% auto;
+  margin-top: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -193,9 +218,15 @@
   flex-wrap: wrap;
   height: auto;
   width: 100vw;
-  background-image: url(../img/fondo-galeria.jpg);
+  background-image: url();
   background-repeat: no-repeat;
   background-size: cover;
+}
+.main .main__galeria h2 {
+  color: wheat;
+  font-size: medium;
+  font-family: fantasy;
+  font-size: 5rem;
 }
 .main .main__galeria .galeria__card {
   text-align: center;
@@ -206,10 +237,18 @@
   justify-content: center;
 }
 .main .main__galeria img {
-  margin: 0% auto;
+  margin: auto;
+  padding: auto;
   width: 320px;
-  height: 480px;
+  height: 400px;
   border: 5px solid white;
+  transition: all 1s;
+}
+.main .main__galeria img:hover {
+  transform: translateY(50deg);
+  transform: scale(1.01);
+  width: 400px;
+  height: 500px;
 }
 .main .main__galeria .card__contenido {
   margin: 0% auto;
@@ -256,8 +295,11 @@
 /*INICIO DE ESTILO SECCION ALSIDE__PUBLICIDAD*/
 .alside__publicidad {
   grid-area: alside__publicidad;
+  background-color: rgb(0, 0, 0);
   width: 100vw;
   height: auto;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
   margin: 0% auto;
   display: flex;
   justify-content: center;
@@ -265,28 +307,47 @@
   flex-wrap: wrap;
 }
 .alside__publicidad .img__publicidad {
-  margin-top: 50px;
-  width: 320px;
+  margin-top: 0px;
+  width: 280px;
   height: 480px;
   border: 1px solid wheat;
+  transition: width 1s;
+  animation: alternate 2s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
+}
+.alside__publicidad .img__publicidad:hover {
+  transform: scale(1.01);
+  width: 400px;
 }
 
 /*INICIO DE ESTILO DE SECTION1*/
 .section1 {
   grid-area: section1;
   margin-top: 10%;
+  margin-bottom: 10%;
   margin: 0% auto;
   height: 100vh;
   width: 100vw;
+  text-align: center;
+  justify-content: center;
 }
 .section1 p {
-  margin-top: 20vh;
-  color: red;
   text-align: center;
-  font-size: 1rem;
+  margin-left: 40%;
+  margin-top: 20vh;
+  color: rgb(253, 248, 248);
+  border: 1px solid rgb(255, 0, 0);
+  height: auto;
+  width: 25%;
+  background: cadetblue;
+  font-size: 30px;
+  transition: padding 2s;
 }
-
-.ubicacion {
+.section1 p:hover {
+  padding: 2%;
+}
+.section1 p .ubicacion {
   margin-top: 1vh;
   width: 60vw;
   height: 40vh;
@@ -295,11 +356,11 @@
   align-items: center;
   position: relative;
   left: 20vw;
-  background-color: aliceblue;
 }
 
 /*INICIO DE ESTILO DE SECTION2*/
 .section2 {
+  background-image: url(../img/tunel.jpg.jpg);
   grid-area: section2;
   display: inline-block;
   position: relative;
@@ -326,6 +387,10 @@
   height: -moz-max-content;
   height: max-content;
   padding: 1%;
+  transition: padding 2s;
+}
+.canales:hover {
+  padding: 5%;
 }
 .canales img {
   height: 4rem;
@@ -334,7 +399,7 @@
   margin: 1%;
 }
 .canales img:hover {
-  transform: scale(1.3);
+  transform: scale(1.4);
 }
 
 /*INICIO DE ESTILO DE SECTION3*/
@@ -358,33 +423,33 @@
   width: 20vw;
   height: 15vh;
   border-radius: 50px;
+  transition: padding 2s;
 }
 .section3 .btn-wp img:hover {
   transform: scale(1.05);
+  padding: 3%;
 }
 
 /*INICIO DE ESTILO DE FOOTER*/
 .footer {
   grid-area: footer;
   position: relative;
+  bottom: 0px;
   top: 0%;
-  height: 100vh !important;
+  left: 0%;
+  height: auto !important;
   width: 100vw !important;
-  background-image: url(../img/fondo-galeria.jpg) !important;
-  background-repeat: no-repeat !important;
-  background-size: auto !important;
-  background-position-x: 40% !important;
-  background-position-y: 95% !important;
+  background-image: url(../img/tunel.jpg.jpg);
 }
 .footer .footer__contenido {
   position: relative;
-  left: 0% auto;
-  top: 30vh;
+  left: 0%;
+  bottom: 20vh;
   align-items: center !important;
   margin: 0% auto !important;
   display: inline-block !important;
   width: 100vw !important;
-  height: 15vh !important;
+  height: 0vh !important;
   text-align: center !important;
 }
 .footer .footer__contenido p {
@@ -411,15 +476,20 @@
   transform: scale(1.2) !important;
 }
 
-/*ESTILO DE PAGINA 1*/
+/*ESTILO DE PAGINA 1 (SECCION DAMAS)*/
 /*SE UTILIZA BOOSTRAP*/
 /*INCIO DE CONTENEDOR__P1*/
-/*
+.contenedor__p {
+  margin: 0%;
+  padding: 0%;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
 
-ESTILOS DE LA SECCION HEADER__CABECERA
-
-
-*/
+/*SE REPITE LOGO__IMG*/
+/*SE REPITE HEADER__CABECERA*/
+/*INICIO DE navMenu_mujer*/
 .navMenu_mujer {
   background-color: #fc00ff !important;
   color: #fafafa !important;
@@ -455,7 +525,8 @@ ESTILOS DE LA SECCION HEADER__CABECERA
   background-color: black;
 }
 
-.barra__interna_mujeres {
+/*INICIO DE barra__internaMujeres*/
+.barra__interna__mujeres {
   background-color: #8e8e8e 169, 169, 169;
   justify-content: end;
   align-items: end;
@@ -477,8 +548,238 @@ ESTILOS DE LA SECCION HEADER__CABECERA
   top: 0%;
   left: 0%;
 }
-.barra__interna_mujeres .secciones {
-  background-color: #f5f5f5;
+.barra__interna__mujeres .secciones__mujeres {
+  background-color: #f710ff;
+  margin: 0 auto;
+  width: -moz-max-content;
+  width: max-content;
+  height: 100%;
+  position: relative;
+  top: 0%;
+  left: 10%;
+}
+.barra__interna__mujeres .seccion__mujeres {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 2vw;
+  margin: 0% auto;
+  width: -moz-max-content;
+  width: max-content;
+  height: auto;
+  position: relative;
+  top: 0%;
+  left: 0%;
+  opacity: 100%;
+}
+.barra__interna__mujeres .seccion__mujeres:hover {
+  transform: scale(1.01);
+  color: #da06ff;
+  background-color: rgba(255, 255, 255, 0.5333333333);
+  background-size: cover;
+  width: auto;
+  text-align: center;
+  font-size: auto;
+}
+
+/*CARRUSEL*/
+.carrusel__propio {
+  height: auto;
+  width: 100vw;
+  background-image: url(../img/detailed_hand_painted_pink_watercolour_background_0509.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagenes__carrusel img {
+  border-radius: 1vh 100vw;
+  height: 80vh;
+  width: 30vw;
+}
+
+.carrusel__propio__contenido {
+  height: auto;
+  width: auto;
+}
+.carrusel__propio__contenido .descripcion__carrusel .title__carrusel {
+  color: rgb(0, 0, 0);
+  background-color: rgba(240, 248, 255, 0.381);
+  width: -moz-max-content;
+  width: max-content;
+  padding: 1%;
+  margin-left: 0% auto;
+  border-radius: 50px;
+  background-image: url(../img/5607231.jpg);
+}
+.carrusel__propio__contenido .descripcion__carrusel .descripcion__carrusel {
+  color: rgb(0, 0, 0);
+  background-color: rgba(240, 248, 255, 0.381);
+  width: -moz-max-content;
+  width: max-content;
+  padding: 1%;
+  margin-left: 0% auto;
+  border-radius: 50px;
+  background-image: url(../img/5607231.jpg);
+}
+
+/*INICIO DE MAIN*/
+.main__galeria__mujer {
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: auto;
+  width: 100vw;
+  background-image: url(../img/cielo.jpg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main__galeria__mujer .galeria__card {
+  text-align: center;
+  margin: auto;
+  padding: auto;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.main__galeria__mujer img {
+  margin: auto;
+  padding: auto;
+  width: 320px;
+  height: 400px;
+  border: 5px solid white;
+  transition: width 2s;
+}
+.main__galeria__mujer img:hover {
+  width: 350px;
+}
+.main__galeria__mujer .card__contenido {
+  margin: 0% auto;
+  height: auto;
+  width: auto;
+}
+.main__galeria__mujer .card__contenido h5 {
+  color: rgb(255, 141, 141);
+  padding: 0vw;
+  font-size: auto;
+  text-align: center;
+  margin: 1%;
+}
+.main__galeria__mujer .card__contenido .card__text {
+  font-size: auto;
+  color: rgb(0, 0, 0);
+  background-color: aliceblue;
+  border-bottom: 5px solid #8e8e8e;
+  border-left: 3px solid #8e8e8e;
+  border-radius: 20px;
+  padding: 1%;
+  text-align: center;
+  margin: 0 auto;
+  width: 50%;
+  margin-bottom: 1vh;
+  margin-top: 1vh;
+}
+.main__galeria__mujer .card__contenido .card__precio {
+  width: auto;
+  width: auto;
+  background-color: rgb(253, 253, 253);
+  border-bottom: 5px solid #8e8e8e;
+  border-left: 3px solid #8e8e8e;
+  border-radius: 20px;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  color: rgb(8, 8, 8);
+  margin-bottom: 2vh;
+  border-top: 2vh;
+  font-size: bold;
+}
+
+/*INICIO DE SECTION3
+ SE REPITE
+ INICIO DE FOOTER
+ SE REPITE
+ ESTILOS PAGINA1 (SECCION DAMAS
+                 INCIO DE ESTILOS DE LA PAGINA 2(SECCION CABALLEROS
+INICIO DE ESTILO CONTENEDOR GENERAL
+SE REPITE contenedor__p1
+INICIO DE ESTILO DE LOGO_IMG
+SE REPITE logo__img
+INCIO DE CABECERA 
+SE REPITE header__cabecera
+INICIO DE navMenu*/
+.nav__menu__hombres {
+  background-image: url(../img/tunel.jpg.jpg) !important;
+  color: #fafafa !important;
+  width: 100vw;
+  height: auto;
+  padding: 10vh;
+  margin: 0 auto;
+}
+.nav__menu__hombres .nav__btn {
+  width: auto;
+  height: auto;
+  border: 5px solid rgba(255, 0, 0, 0);
+}
+.nav__menu__hombres .nav__btn .nav__span {
+  color: #fbf5f5;
+  font-size: 1rem;
+}
+.nav__menu__hombres .nav__btn .nav__span .nav__item {
+  text-align: justify;
+  margin: auto;
+  padding: 10%;
+  color: rgb(4, 4, 4);
+  width: 100%;
+  height: 50%;
+}
+.nav__menu__hombres .nav__btn .nav__span .nav__item .nav__item a {
+  color: rgb(0, 0, 0);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.nav__menu__hombres .nav__btn .nav__span .nav__item .nav__item a:a:hover {
+  font-family: "Times New Roman", Times, serif;
+  color: azure;
+  background-color: black;
+}
+
+/*INICIO DE barra interna de hombres*/
+.barra__interna__hombres {
+  background-color: #8e8e8e 169, 169, 169;
+  justify-content: end;
+  align-items: end;
+  background-image: url(../img/hombre-comprando.jpg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 21%;
+  padding-left: 0%;
+  padding-right: 0%;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  border-radius: 1px;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  margin-left: 50px auto;
+  width: 100vw;
+  height: 50%;
+  position: relative;
+  top: 0%;
+  left: 0%;
+  animation: alternate 5s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
+}
+.barra__interna__hombres .seccion__hombres {
+  background-color: #010000;
   margin: 0 auto;
   width: -moz-max-content;
   width: max-content;
@@ -487,10 +788,10 @@ ESTILOS DE LA SECCION HEADER__CABECERA
   top: 20%;
   left: 10%;
 }
-.barra__interna_mujeres .seccion {
+.barra__interna__hombres .seccion__a {
   display: flex;
   flex-direction: column;
-  color: #b300ff;
+  color: #00ff62;
   text-decoration: none;
   font-size: 1rem;
   padding: 2vh;
@@ -501,65 +802,97 @@ ESTILOS DE LA SECCION HEADER__CABECERA
   position: relative;
   top: 0%;
   left: 0%;
-  opacity: 100%;
+  animation: 2s;
+  animation: movimiento;
+  animation-iteration-count: infinite;
 }
-.barra__interna_mujeres .seccion:hover {
+.barra__interna__hombres .seccion__a:hover {
   transform: scale(1.01);
-  color: #b159fd;
+  color: #9bfd59;
   background-color: #010101;
   width: 100%;
 }
 
-#carouselExampleCaptions {
-  background-color: rgb(255, 8, 230);
-  border: 0.1px solid rgb(7, 8, 8);
+@keyframes movimiento {
+  0% {
+    border-top: solid 5px red;
+  }
+  25% {
+    border-left: 5px solid blue;
+  }
+  50% {
+    border-bottom: 5px solid green;
+  }
+  100% {
+    border-right: 5px solid yellow;
+  }
+}
+/*MIAN DE HOMBRES*/
+.main__galeria__hombres {
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: auto;
   width: 100vw;
-  height: -moz-max-content;
-  height: max-content;
-  position: relative;
-  left: 0%;
+  background-image: url(../img/fondo-galeria.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main__galeria__hombres .galeria__card {
+  text-align: center;
+  margin: auto;
+  padding: auto;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.main__galeria__hombres img {
+  margin: auto;
+  padding: auto;
+  width: 320px;
+  height: 400px;
+  border: 5px solid white;
+}
+.main__galeria__hombres .card__contenido {
+  margin: 0% auto;
+  height: auto;
+  width: auto;
+}
+.main__galeria__hombres .card__contenido h5 {
+  color: rgb(255, 141, 141);
+  padding: 0vw;
+  font-size: auto;
+  text-align: center;
+  margin: 1%;
+}
+.main__galeria__hombres .card__contenido .card__text {
+  font-size: auto;
+  color: rgb(0, 0, 0);
+  background-color: aliceblue;
+  border-bottom: 5px solid #8e8e8e;
+  border-left: 3px solid #8e8e8e;
+  border-radius: 20px;
+  padding: 1%;
+  text-align: center;
   margin: 0 auto;
-  margin-top: 10vh;
-  margin-bottom: 10vh;
+  width: 50%;
+  margin-bottom: 1vh;
+  margin-top: 1vh;
 }
-
-.card {
-  height: 100%;
+.main__galeria__hombres .card__contenido .card__precio {
   width: auto;
-}
-.card img {
-  height: 60%;
   width: auto;
-}
-
-.pie {
-  background-color: hsl(0, 0%, 100%) !important;
-  color: rgb(0, 0, 0) !important;
-  text-align: center !important;
-  font-size: 1.1rem;
-}
-.pie a {
-  color: #fd0808 !important;
-  background-color: #ddd !important;
-}
-.pie a:hover {
-  color: white !important;
-  background-color: Red !important;
-}
-
-.imagenesCarrusel img {
-  width: 100vw;
-  height: 50%;
-}
-.imagenesCarrusel img h5 {
-  color: rgb(0, 0, 0);
-  background-color: rgba(255, 255, 255, 0.3725490196);
-  margin-left: 45%;
-  margin-right: 45%;
-}
-.imagenesCarrusel img h5 p {
-  color: rgb(0, 0, 0);
-  background-color: rgba(255, 255, 255, 0.3725490196);
-  margin-left: 40%;
-  margin-right: 40%;
+  background-color: rgb(253, 253, 253);
+  border-bottom: 5px solid #8e8e8e;
+  border-left: 3px solid #8e8e8e;
+  border-radius: 20px;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  color: rgb(8, 8, 8);
+  margin-bottom: 2vh;
+  border-top: 2vh;
+  font-size: bold;
 }/*# sourceMappingURL=sass.css.map */
