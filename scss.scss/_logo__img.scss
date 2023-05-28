@@ -1,0 +1,23 @@
+.logo__img { 
+    grid-area: logo__img !important;
+    width:100vw !important;
+    height: 3vh !important;
+    margin: 0% !important;
+    padding: 0% !important;
+    position: absolute !important;
+    left: auto !important;  
+    z-index: 1 !important;
+         img{
+            border: 1px solid black !important;
+            border-radius: 50px !important;
+            width: 20vw !important;
+            height: 12vh !important;
+            margin-top: 10px !important;
+            margin-left: 50px !important;
+            z-index: 1 !important;
+            &:hover{
+              transform: scale(1.01) !important;
+              border-color: orange !important;
+            }           
+        }
+  }

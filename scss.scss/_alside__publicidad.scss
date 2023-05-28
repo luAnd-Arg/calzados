@@ -1,0 +1,16 @@
+.alside__publicidad{ 
+  grid-area: alside__publicidad; 
+  width: 100vw; 
+  height: auto;
+  margin: 0% auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+       .img__publicidad {
+            margin-top: 50px;
+            width: 320px;
+            height: 480px;
+            border: 1px solid wheat;
+         }
+    }

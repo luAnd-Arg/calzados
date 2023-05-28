@@ -5,47 +5,7 @@
   box-sizing: border-box;
 }
 
-/*ESTILOS DEL GRID*/
-.container__general {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
-  gap: 0% 0%;
-  grid-auto-flow: row;
-  grid-template-areas: "logo__img logo__img logo__img" "header__cabecera header__cabecera header__cabecera" "nav__menu nav__menu nav__menu" "main main main" "alside__publicidad alside__publicidad alside__publicidad" "section1 section2 section3" "footer footer footer";
-}
-
-.container__general {
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
-  width: 100vw;
-  height: 100vh;
-}
-
-/*ESTILOS DEL HOME*/
-.logo__img { /*ESTILOS DE SECCION LOGO*/
-  grid-area: logo__img !important;
-  width: 100vw !important;
-  height: 3vh !important;
-  margin: 0% !important;
-  padding: 0% !important;
-  position: absolute !important;
-  left: auto !important;
-  z-index: 1 !important;
-}
-.logo__img img {
-  border: 1px solid black !important;
-  border-radius: 50px !important;
-  width: 20vw !important;
-  height: 12vh !important;
-  margin-top: 10px !important;
-  margin-left: 50px !important;
-  z-index: 1 !important;
-}
-.logo__img img:hover {
-  transform: scale(1.01) !important;
-  border-color: orange !important;
-}
-
+/*ESTILOS DE LA SECCION HEADER__CABECERA*/
 /*ESTILOS DE LA SECCION HEADER__CABECERA*/
 .header__cabecera {
   grid-area: header__cabecera;
@@ -82,6 +42,47 @@
   color: chartreuse;
   background: black;
   transform: scale(1.02);
+}
+
+/*ESTILOS DEL GRID*/
+.container__general {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+  gap: 0% 0%;
+  grid-auto-flow: row;
+  grid-template-areas: "logo__img logo__img logo__img" "header__cabecera header__cabecera header__cabecera" "nav__menu nav__menu nav__menu" "main main main" "alside__publicidad alside__publicidad alside__publicidad" "section1 section2 section3" "footer footer footer";
+}
+
+.container__general {
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  width: 100vw;
+  height: 100vh;
+}
+
+/*ESTILOS DE SECCION LOGO*/
+.logo__img {
+  grid-area: logo__img !important;
+  width: 100vw !important;
+  height: 3vh !important;
+  margin: 0% !important;
+  padding: 0% !important;
+  position: absolute !important;
+  left: auto !important;
+  z-index: 1 !important;
+}
+.logo__img img {
+  border: 1px solid black !important;
+  border-radius: 50px !important;
+  width: 20vw !important;
+  height: 12vh !important;
+  margin-top: 10px !important;
+  margin-left: 50px !important;
+  z-index: 1 !important;
+}
+.logo__img img:hover {
+  transform: scale(1.01) !important;
+  border-color: orange !important;
 }
 
 /*ESTILO DE LA SECCION NAV__MENU*/
@@ -263,13 +264,14 @@
   align-items: center;
   flex-wrap: wrap;
 }
-.alside__publicidad img {
+.alside__publicidad .img__publicidad {
   margin-top: 50px;
   width: 320px;
   height: 480px;
-  border: 1px solid white;
+  border: 1px solid wheat;
 }
 
+/*INICIO DE ESTILO DE SECTION1*/
 .section1 {
   grid-area: section1;
   margin-top: 10%;
@@ -296,6 +298,7 @@
   background-color: aliceblue;
 }
 
+/*INICIO DE ESTILO DE SECTION2*/
 .section2 {
   grid-area: section2;
   display: inline-block;
@@ -334,6 +337,7 @@
   transform: scale(1.3);
 }
 
+/*INICIO DE ESTILO DE SECTION3*/
 .section3 {
   grid-area: section3;
   background-color: none(93, 92, 94);
@@ -359,6 +363,7 @@
   transform: scale(1.05);
 }
 
+/*INICIO DE ESTILO DE FOOTER*/
 .footer {
   grid-area: footer;
   position: relative;
@@ -406,14 +411,15 @@
   transform: scale(1.2) !important;
 }
 
-/*estilos de las demas paginas*/
-.contenedor__p1 {
-  margin: 0%;
-  padding: 0%;
-  width: 100vw;
-  height: 100vh;
-}
+/*ESTILO DE PAGINA 1*/
+/*SE UTILIZA BOOSTRAP*/
+/*INCIO DE CONTENEDOR__P1*/
+/*
 
+ESTILOS DE LA SECCION HEADER__CABECERA
+
+
+*/
 .navMenu_mujer {
   background-color: #fc00ff !important;
   color: #fafafa !important;

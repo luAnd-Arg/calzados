@@ -1,0 +1,47 @@
+.footer { grid-area: footer;
+    position: relative;
+    top: 0%;
+    height: 100vh !important;
+    width: 100vw !important;
+     background-image: url(../img/fondo-galeria.jpg) !important;
+     background-repeat: no-repeat !important; 
+     background-size:auto !important;
+      background-position-x: 40% !important;
+      background-position-y: 95% !important;
+
+              .footer__contenido{
+                    position: relative;
+                    left: 0% auto;
+                    top: 30vh;
+                    align-items: center !important;
+                    margin: 0% auto !important;
+                    display:inline-block !important;
+                    width: 100vw !important;
+                    height: 15vh !important;
+                    text-align: center !important;
+                    p{  width:auto !important;
+                        height: auto !important;
+                        color: rgb(0, 0, 0) !important;
+                        background-color: azure !important;
+                        padding: 2% !important;
+                        border-radius: 50px !important;
+                        border-bottom: 3px solid red !important;
+                        border-left: 5px solid red !important;
+                        margin-left: 10vw;
+                        margin-right: 10vw;
+                        a{
+                          color: red !important;
+                          font: bold !important;
+                          margin: 1% !important;
+                          background-color:whitesmoke !important;
+                          &:hover{
+                            color: whitesmoke !important;
+                            background-color: rgb(2, 0, 0) !important;
+                            transform: scale(1.2) !important;
+                          }
+                        }
+                      
+                      }
+                
+                    }        
+                  }

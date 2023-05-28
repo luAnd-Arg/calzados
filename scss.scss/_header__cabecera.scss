@@ -1,0 +1,39 @@
+/*ESTILOS DE LA SECCION HEADER__CABECERA*/
+.header__cabecera { 
+   grid-area: header__cabecera;
+   width: 100vw;
+   height: 20vh;
+   position: relative;
+   top: 0%;
+   padding: 0px;
+   margin-bottom: 10%;
+   
+      h1{  
+        text-align: center;
+        position: relative;
+        top: 80%; 
+        right: 0%;
+        height: auto;
+        width: auto;
+        text-align: center;
+        font-style: oblique;
+        font-family:'Smokum', cursive;
+        font-size:3rem auto; 
+        
+          a{
+           color: orange; 
+           background-color: black;
+           border-left: 5px solid orange(255, 255, 96);
+           border-bottom: 3px solid orange;
+           border-radius: 50px;
+           text-decoration: none;
+           width: auto;
+           height: auto;
+              &:hover {
+            color: chartreuse;
+            background: black;
+            transform: scale(1.02);  
+            } 
+          }
+      }
+}

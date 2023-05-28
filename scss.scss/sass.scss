@@ -1,241 +1,108 @@
   /*RESETEO*/
-*{
- margin: 0%;
- padding: 0%;
- box-sizing: border-box;
-}
-/*ESTILOS DEL GRID*/
-.container__general {  
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
-  gap: 0% 0%;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "logo__img logo__img logo__img"
-    "header__cabecera header__cabecera header__cabecera"
-    "nav__menu nav__menu nav__menu"
-    "main main main"
-    "alside__publicidad alside__publicidad alside__publicidad"
-    "section1 section2 section3"
-    "footer footer footer";
-}
-.container__general{
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
-  width: 100vw;
-  height:100vh;
-  
- }
-/*ESTILOS DEL HOME*/
-.logo__img { /*ESTILOS DE SECCION LOGO*/
-    grid-area: logo__img !important;
-    width:100vw !important;
-    height: 3vh !important;
-    margin: 0% !important;
-    padding: 0% !important;
-    position: absolute !important;
-    left: auto !important;  
-    z-index: 1 !important;
-         img{
-            border: 1px solid black !important;
-            border-radius: 50px !important;
-            width: 20vw !important;
-            height: 12vh !important;
-            margin-top: 10px !important;
-            margin-left: 50px !important;
-            z-index: 1 !important;
-            &:hover{
-              transform: scale(1.01) !important;
-              border-color: orange !important;
-            }           
+    *{
+      margin: 0%;
+      padding: 0%;
+      box-sizing: border-box;
     }
-  }
-
-/*ESTILOS DE LA SECCION HEADER__CABECERA*/
-.header__cabecera { 
-   grid-area: header__cabecera;
-   width: 100vw;
-   height: 20vh;
-   position: relative;
-   top: 0%;
-   padding: 0px;
-   margin-bottom: 10%;
-   
-      h1{  
-        text-align: center;
-        position: relative;
-        top: 80%; 
-        right: 0%;
-        height: auto;
-        width: auto;
-        text-align: center;
-        font-style: oblique;
-        font-family:'Smokum', cursive;
-        font-size:3rem auto; 
-        
-          a{
-           color: orange; 
-           background-color: black;
-           border-left: 5px solid orange(255, 255, 96);
-           border-bottom: 3px solid orange;
-           border-radius: 50px;
-           text-decoration: none;
-           width: auto;
-           height: auto;
-              &:hover {
-            color: chartreuse;
-            background: black;
-            transform: scale(1.02);  
-            } 
-          }
-      }
-}
-/*ESTILO DE LA SECCION NAV__MENU*/
-.nav__menu {
-    grid-area: nav__menu;           
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    width: 100vw;
-    height:20vh;
-    margin: 0% auto;
-    
-      ul{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 10%;
-        margin: 0% auto;
-        width: 100vw;
-        background-color: rgb(255, 5, 5);
-        
-          li{
-            background-color: aliceblue;
-            width: 100vw;
-            height: 10vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            list-style: none;
-            text-align: center;
-            .seccion__inicio{
-              color: orange;
-              &:hover{
-                 color: rgb(255, 255, 255);
-                 transform: scale(1.1);
-                 border: 1px solid rgb(255, 255, 255);
-                 border-top: none;
-                 border-right: none;
-                 border-radius: 1px;
-                 background-color: rgb(66, 64, 64);
-              }
-                 
-            }
-            .seccion__damas{
-              color: orange;
-              &:hover{
-                color: rgb(255, 5, 255);
-                transform: scale(1.1);
-                border: 1px solid rgb(255, 255, 255);
-                 border-top: none;
-                 border-right: none;
-                 border-radius: 1px;
-                 background-color: rgb(66, 64, 64);
-              }  
-            }
-            .seccion__caballeros{
-              color:orange;
-              &:hover{
-                color: rgb(121, 113, 113);
-                transform: scale(1.1);
-                border: 1px solid rgb(255, 255, 255);
-                 border-top: none;
-                 border-right: none;
-                 border-radius: 1px;
-                 background-color: rgb(66, 64, 64);
-              }
-            }
-            .seccion__nosotros{
-              color: orange;
-              &:hover{color: chartreuse;
-                transform: scale(1.1);
-                border: 1px solid rgb(255, 255, 255);
-                 border-top: none;
-                 border-right: none;
-                 border-radius: 1px;
-                 background-color: rgb(66, 64, 64);
-              } 
-            }
-                a {
-                text-decoration: none;
-                padding: 3%;
-                margin: 2%;
-                width: auto;
+  /*ESTILOS DE LA SECCION HEADER__CABECERA*/
+      @import "_header__cabecera";
+  /*ESTILOS DEL GRID*/
+        @import "_container__general";
+  /*ESTILOS DE SECCION LOGO*/
+          @import "_logo__img";
+  /*ESTILO DE LA SECCION NAV__MENU*/
+            @import "_nav__menu";
+  /*INCIO DE ESTILO DE SECCION MAIN*/
+              @import "_main";
+  /*INICIO DE ESTILO SECCION ALSIDE__PUBLICIDAD*/      
+                @import "_alside__publicidad";
+  /*INICIO DE ESTILO DE SECTION1*/
+                  @import "_section1";
+  /*INICIO DE ESTILO DE SECTION2*/
+                    @import "_section2";
+  /*INICIO DE ESTILO DE SECTION3*/
+                      @import "_section3";    
+  /*INICIO DE ESTILO DE FOOTER*/
+                        @import "_footer";
+                       /*ESTILO DE PAGINA 1 (SECCION DAMAS)*/
+  /*SE UTILIZA BOOSTRAP*/
+  /*INCIO DE CONTENEDOR__P1*/
+                          @import "_contenedor_p";
+  /*
+    /*SE REPITE LOGO__IMG*/
+    /*SE REPITE HEADER__CABECERA*/
+    /*INICIO DE navMenu_mujer*/
+                            @import "_navMenu_mujer";
+    /*INICIO DE barra__internaMujeres*/
+                              @import "_barra__interna_mujeres";
+    /*CARRUSEL*/
+                                @import "_carrusel_p";
+    /*INICIO DE MAIN
+    SE REPITE
+    INICIO DE SECTION3
+    SE REPITE
+    INICIO DE FOOTER
+    SE REPITE
+    ESTILOS PAGINA1 (SECCION DAMAS
+    INCIO DE ESTILOS DE LA PAGINA 2(SECCION CABALLEROS
+   INICIO DE ESTILO CONTENEDOR GENERAL
+   SE REPITE contenedor__p1
+   INICIO DE ESTILO DE LOGO_IMG
+   SE REPITE logo__img
+   INCIO DE CABECERA 
+   SE REPITE header__cabecera
+   INICIO DE navMenu*/
+  /*INICIO DE barra interna de hombres*/
+  .barra__interna__hombres {
+      text-align: center;
+      display: flex;
+      background-color: #ff0000(169, 169, 169);
+      justify-content:center;
+      align-items: center;
+      background-image: url(../img/hombre-comprando.jpg);
+      background-repeat: no-repeat;
+      background-position-x: center;
+      background-position-y:-150px;
+      padding-left:0%;
+      padding-right: 0%;    
+      padding-top: 0%;
+      padding-bottom: 0%;
+      border: 1px rgb(0, 0, 0) solid ;
+      border-radius: 1px;
+      margin-top: 10vh;
+      margin-bottom: 1px;
+      margin-left: auto;
+      margin-right:auto;
+      width: 100%;
+      height: 20vh;
+      position: relative;
+      right: 0%;
+    }
+            .secciones__hombres{
                 height: auto;
-                text-align: center;
-                font-family: 'Times New Roman', Times, serif;
-                font-size: auto; 
-              
-               }
+                width: auto;
             }
-          }
-        }
-/*INCIO DE ESTILO DE SECCION MAIN*/
-.main { 
-  grid-area: main;
-  margin: 0% auto;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100vw;
-  height: auto;
-  
-    .main__galeria{
-       margin:0px auto ;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       flex-wrap: wrap;
-       height: auto;
-       width: 100vw;
-       background-image: url(../img/fondo-galeria.jpg);
-       background-repeat: no-repeat;
-       background-size: cover;
-      
-       .galeria__card{
-    
-            text-align: center;
-            margin: auto;
-            padding:auto;
-            margin-top: 10px;
-            align-items:center;
-            justify-content:center;
-
-      }
-        
-        img{
-          margin: 0% auto;
-          width: 320px;
-          height: 480px;
-          border: 5px solid white;
-        }
-          .card__contenido{
-          
-            margin: 0% auto;
-            height: auto;
-            width: auto;
-              h5 {
-                color: rgb(255, 141, 141); 
-                padding: 0vw;
+                .seccion__hombres{
+                        text-align: center;
+                        text-decoration: none;
+                        color: #000000;
+                        font-size: 1rem;
+                        padding: auto;
+                        margin: auto;
+                        width: 100vw;
+                        height: 100vh;
+                        position: relative;
+                        top: 50%;
+                            &:hover {
+                            transform: scale(1.01);
+                            color: #000000;
+                            }
+                }
+           
+   /*inicio de galeria hombres*/
+        .card__textHombres{
                 font-size: auto;
-                text-align: center;
-                margin: 1%;
-            }
-            .card__text{
-                font-size: auto;
-                color: rgb(0, 0, 0) ;
+                color: rgb(255, 0, 0) ;
                 background-color: aliceblue;
                 border-bottom: 5px solid #8e8e8e;
                 border-left: 3px solid #8e8e8e;
@@ -245,333 +112,51 @@
                 margin: 0 auto;
                 width: 50%;
                 margin-bottom: 1vh;
-                margin-top: 1vh;  
+                margin-top: 1vh; 
+                      .card__precioHombres{
+                          .card__precioHombres{
+                                width:auto;
+                                width: auto;
+                                background-color: rgb(253, 253, 253);
+                                border-bottom: 5px solid #8e8e8e;
+                                border-left: 3px solid #8e8e8e;
+                                border-radius: 20px;
+                                width: 50%;
+                                margin: 0 auto;
+                                text-align: center;
+                                color: rgb(251, 6, 6);
+                                margin-bottom: 2vh;
+                                border-top: 2vh;
+                                font-size: bold;
+                                              }
+                                             }  
+                                            }                             
 
-            }
-            .card__precio{
-              width:auto;
-              width: auto;
-              background-color: rgb(253, 253, 253);
-              border-bottom: 5px solid #8e8e8e;
-              border-left: 3px solid #8e8e8e;
-              border-radius: 20px;
-              width: 50%;
-              margin: 0 auto;
-              text-align: center;
-              color: rgb(8, 8, 8);
-              margin-bottom: 2vh;
-              border-top: 2vh;
-              font-size: bold;
-              
-            }
-          }
-        }
-      }
-/*INICIO DE ESTILO SECCION ALSIDE__PUBLICIDAD*/      
-.alside__publicidad { 
-  grid-area: alside__publicidad; 
-  width: 100vw; 
-  height: auto;
-  margin: 0% auto;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  
+
+
+//  .card{
+//      height: 100%;
+//      width: auto;
+//        img{
+//         height: 60%;
+//         width: auto;
+//     }
+//   }
+//  .pie  {
+//      background-color: hsl(0, 0%, 100%)!important;
+//      color: rgb(0, 0, 0)!important;
+//      text-align: center !important;
+//      font-size: 1.1rem;
+//         a{
+//           color: #fd0808 !important; 
+//           background-color: #ddd !important;
+//            &:hover{
+//             color: white !important;
+//             background-color: Red !important;
+//               } 
+//            }
+//  }
  
-   img{    margin-top: 50px;
-           width: 320px;
-            height: 480px;
-            border: 1px solid white;
-        }
-}
-
-.section1 { 
-        grid-area: section1; 
-        margin-top: 10%;
-        margin: 0% auto;
-        height: 100vh;
-        width: 100vw;
-        p{
-          margin-top: 20vh;
-          color: red;
-          text-align: center;
-          font-size: 1rem;
-        }
-    }
-        .ubicacion{
-          margin-top: 1vh;
-          width: 60vw;
-          height: 40vh;
-          display: block;  
-          justify-content: center;
-          align-items: center;
-          position: relative;
-          left: 20vw;
-          background-color: aliceblue;
-        
-}
-
-.section2 { 
-        grid-area: section2; 
-        display: inline-block;
-        position: relative;
-        top: 0%;
-        left: 0%;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        height: 100vh;
-        width: 100vw;     
-                  p { 
-                      color: rgb(0, 0, 0);
-                      padding: 10px;
-                      background-color: rgb(194, 194, 194);
-                      border-top: 5px solid whitesmoke;
-                      border-right: 3px solid whitesmoke;
-                      height: auto;               
-                      width: auto;
-                  }
-                }
-                      .canales{
-                        background-color: rgb(237, 237, 237);
-                        height: max-content;
-                        padding: 1%;  
-                        img{
-                          height: 4rem;
-                          width: 4rem;
-                          padding: 0.1rem;
-                          margin: 1%; 
-                          &:hover{
-                            transform: scale(1.3);
-                          }
-                        }
-                      }
-                  
-                
-              
-              
-            .section3 { 
-              grid-area: section3;
-              background-color: none(93, 92, 94); 
-              height: 100px;
-              width: 100vw;
-                .btn-wp{
-                    position: fixed;
-                    bottom: 5%;
-                    right: 10%; 
-                    width: 10vw;
-                    height:10vh;
-                    border-radius: 500px;
-                    z-index: 1;
-                          img{
-                            padding: 2vh 2vw;
-                            width: 20vw;
-                            height: 15vh;
-                            border-radius: 50px;
-                                        &:hover{
-                                          transform: scale(1.05);
-                                         }     
-                            }
-                 }
-  }
- 
-.footer { grid-area: footer;
-      position: relative;
-      top: 0%;
-      height: 100vh !important;
-      width: 100vw !important;
-       background-image: url(../img/fondo-galeria.jpg) !important;
-       background-repeat: no-repeat !important; 
-       background-size:auto !important;
-        background-position-x: 40% !important;
-        background-position-y: 95% !important;
-
-                .footer__contenido{
-                      position: relative;
-                      left: 0% auto;
-                      top: 30vh;
-                      align-items: center !important;
-                      margin: 0% auto !important;
-                      display:inline-block !important;
-                      width: 100vw !important;
-                      height: 15vh !important;
-                      text-align: center !important;
-                      p{  width:auto !important;
-                          height: auto !important;
-                          color: rgb(0, 0, 0) !important;
-                          background-color: azure !important;
-                          padding: 2% !important;
-                          border-radius: 50px !important;
-                          border-bottom: 3px solid red !important;
-                          border-left: 5px solid red !important;
-                          margin-left: 10vw;
-                          margin-right: 10vw;
-                          a{
-                            color: red !important;
-                            font: bold !important;
-                            margin: 1% !important;
-                            background-color:whitesmoke !important;
-                            &:hover{
-                              color: whitesmoke !important;
-                              background-color: rgb(2, 0, 0) !important;
-                              transform: scale(1.2) !important;
-                            }
-                          }
-                        
-                        }
-                  
-                      }        
-                    }
-
-         /*estilos de las demas paginas*/
-         .contenedor__p1{
-          margin: 0%;
-          padding: 0%;  
-          width: 100vw;
-          height: 100vh;
-         }
-
-         .navMenu_mujer{
-            background-color: #fc00ff !important;
-            color: #fafafa!important;
-            width: 100vw;
-            height: auto;
-            padding: 10vh;
-            margin: 0 auto;
-                  .nav__Mujer__btn{
-                    width: auto;
-                    height: auto;
-                      border: 5px solid rgba(255, 0, 0, 0);
-                        .nav__Mujer__span{
-                          color: #fbf5f5;
-                          font-size: 1rem;
-                            .nav-item{
-                                text-align: justify;
-                                margin: auto;
-                                padding: 10%;
-                                color: rgb(4, 4, 4);
-                                width: 100%;
-                                height: 50%; 
-                                  .nav-item a{
-                                      color: rgb(0, 0, 0);
-                                      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                                      &:a:hover{
-                                          font-family:'Times New Roman', Times, serif;
-                                          color: azure;
-                                          background-color: black;
-                                        }
-                              }
-                      }
-                    }
-                  }
-                }
-//     /*BARRA INTERNA DE MUJERES*/
-    .barra__interna_mujeres {
-        
-        background-color: #8e8e8e(169, 169, 169);
-        justify-content:end;
-        align-items: end;
-        background-image: url(../img/mujer-comprando.jpg);
-        background-repeat: no-repeat;
-        background-position-x: center;
-        background-position-y: center ;
-        padding-left:0%;
-        padding-right: 0%;    
-        padding-top: 0%;
-        padding-bottom: 0%;
-        border-radius: 1px;
-        margin-top: 10vh;
-        margin-bottom: 10vh;
-        margin-left: 50px auto;
-        width: 100vw;
-        height: 50%;
-        position: relative;
-        top: 0%;
-        left: 0%;
-        
-        .secciones{
-            background-color: #f5f5f5;
-            margin: 0 auto;
-            width: max-content;
-            height: auto;
-            position: relative;
-            top: 20%;
-            left: 10%;
-        }  
-          .seccion{
-                display: flex;
-                flex-direction: column;
-                color: #b300ff;
-                text-decoration: none; 
-                 font-size: 1rem;
-                 padding: 2vh;
-                 margin: 1%;
-                 width: max-content;
-                 height: auto;
-                 position: relative;
-                 top: 0%;
-                 left: 0%;
-                 opacity: 100%;
-                  &:hover{
-                        transform: scale(1.01) ;
-                        color: #b159fd ;
-                        background-color: #010101;
-                        width: 100%;
-                  }                    
-         }
-  }
-
-   #carouselExampleCaptions{
-     background-color: rgb(255, 8, 230);
-     border:0.1px solid rgb(7, 8, 8);
-     width: 100vw;
-     height: max-content;
-     position: relative;
-     left: 0%;
-     margin: 0 auto;
-     margin-top: 10vh;
-     margin-bottom: 10vh;
-     
- }
- .card{
-     height: 100%;
-     width: auto;
-       img{
-        height: 60%;
-        width: auto;
-    }
-  }
- .pie  {
-     background-color: hsl(0, 0%, 100%)!important;
-     color: rgb(0, 0, 0)!important;
-     text-align: center !important;
-     font-size: 1.1rem;
-        a{
-          color: #fd0808 !important; 
-          background-color: #ddd !important;
-           &:hover{
-            color: white !important;
-            background-color: Red !important;
-              } 
-           }
- }
-  .imagenesCarrusel img{
-     width:100vw;
-     height: 50%;
-        h5{
-        color: rgb(0, 0, 0);
-        background-color: #ffffff5f;
-        margin-left: 45%;
-        margin-right: 45%;
-          p{
-              color: rgb(0, 0, 0);
-            background-color: #ffffff5f;
-            margin-left: 40%;
-            margin-right: 40%;
-        }
-      }
-  }
 //   .gallery {
 //              display: flex;
 //              flex-wrap: wrap;
@@ -721,10 +306,7 @@
 //               }
 //             }
 //           }      
-// .navMenu_hombre {
-//     color:black;
-//     border: 5px solid grey;
-//  }  
+// 
 
 
         
@@ -787,47 +369,7 @@
 //           }
 //       }
 //   }
-//  .barra-h-horizontal {
-//       text-align: center;
-//       display: flex;
-//       background-color: #ff0000(169, 169, 169);
-//       justify-content:center;
-//       align-items: center;
-//       background-image: url(../img/hombre-comprando.jpg);
-//       background-repeat: no-repeat;
-//       background-position-x: center;
-//       background-position-y:-150px;
-//       padding-left:0%;
-//       padding-right: 0%;    
-//       padding-top: 0%;
-//       padding-bottom: 0%;
-//       border: 1px rgb(0, 0, 0) solid ;
-//       border-radius: 1px;
-//       margin-top: 10vh;
-//       margin-bottom: 1px;
-//       margin-left: auto;
-//       margin-right:auto;
-//       width: 100%;
-//       height: 20vh;
-//       position: relative;
-//       right: 0%;
-//           .seccion{
-//                  text-align: center;
-//                  text-decoration: none;
-//                  color: #000000;
-//                  font-size: 1rem;
-//                  padding: auto;
-//                  margin: auto;
-//                  width: 100vw;
-//                  height: 100vh;
-//                  position: relative;
-//                  top: 50%;
-//                     &:hover {
-//                      transform: scale(1.01);
-//                      color: #000000;
-//                     }
-//                 }
-//            }
+//  
 //  .gallery_hombre {
 //              display: flex;
 //              flex-wrap: wrap;
