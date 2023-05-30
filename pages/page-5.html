@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calzados LuAnd - Crear cuenta</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #F1F1F1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      background-color: #FFFFFF;
+      border-radius: 5px;
+      padding: 20px;
+      width: 80%;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-container h2 {
+      margin-top: 0;
+      color: #333333;
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="email"],
+    .form-container input[type="password"],
+    .form-container select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 3px;
+      background-color: #F4F4F4;
+      color: #333333;
+    }
+
+    .form-container button[type="submit"] {
+      background-color: #3498DB;
+      color: #FFFFFF;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .form-container p {
+      color: #777777;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Crear cuenta</h2>
+    <!-- Formulario de crear cuenta -->
+    <form action="#" method="POST">
+      <input type="text" name="nombre" placeholder="Nombre" required><br>
+      <input type="text" name="apellido" placeholder="Apellido" required><br>
+      <input type="text" name="usuario" placeholder="Usuario" required><br>
+      <input type="text" name="telefono" placeholder="Teléfono" required><br>
+      <input type="email" name="email" placeholder="Correo electrónico" required><br>
+      <input type="text" name="localidad" placeholder="Localidad" required><br>
+      <input type="password" name="password" placeholder="Contraseña" required><br>
+      <input type="password" name="password-confirm" placeholder="Repetir contraseña" required><br>
+      <button type="submit">Crear cuenta</button>
+    </form>
+    <p>¿Ya tienes una cuenta? <a href="../pages/page-4.html">Iniciar sesión</a></p>
+  </div>
+</body>
+</html>

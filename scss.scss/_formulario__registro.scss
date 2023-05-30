@@ -1,0 +1,33 @@
+.formulario__registro {
+      background-image: url("../img/cielo.jpg.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+   
+        .form-container {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 5px;
+        width: 80%;
+        max-width: 400px;
+        text-align: center;
+
+            .form-container h2 {
+            margin-top: 0;
+            
+
+                .form-container a {
+                text-decoration: none;
+                }
+
+                    .form-container button {
+                    margin-top: 20px;
+                    padding: 1vh,1vw;                    
+                }
+                }
+            }
+        }
+

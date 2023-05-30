@@ -502,6 +502,48 @@
   padding: 3%;
 }
 
+.section3 .btn__subir {
+  width: 100px;
+  height: -moz-min-content;
+  height: min-content;
+  text-align: center;
+  margin: 0% auto;
+  position: fixed;
+  bottom: 18vh;
+  right: 3vw;
+}
+.section3 .btn__subir a {
+  color: aqua;
+  background: fuchsia;
+  width: auto;
+  padding: 5%;
+  text-decoration: none;
+  border-radius: 50px;
+  border: 5px rgb(230, 230, 230) double;
+  z-index: 1;
+}
+
+.section3 .btn__subir__hombres {
+  width: 100px;
+  height: -moz-min-content;
+  height: min-content;
+  text-align: center;
+  margin: 0% auto;
+  position: fixed;
+  bottom: 18vh;
+  right: 3vw;
+}
+.section3 .btn__subir__hombres a {
+  color: rgb(247, 255, 255);
+  background: rgb(0, 0, 0);
+  width: auto;
+  padding: 5%;
+  text-decoration: none;
+  border-radius: 50px;
+  border: 5px rgb(230, 230, 230) double;
+  z-index: 1;
+}
+
 /*INICIO DE ESTILO DE FOOTER*/
 .footer__propio {
   grid-area: footer__propio;
@@ -1018,4 +1060,32 @@ INICIO DE navMenu*/
   padding: 2%;
   margin-bottom: 5vh;
   margin-top: 5vh;
+}
+
+.formulario__registro {
+  background-image: url("../img/cielo.jpg.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.formulario__registro .form-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+}
+.formulario__registro .form-container .form-container h2 {
+  margin-top: 0;
+}
+.formulario__registro .form-container .form-container h2 .form-container a {
+  text-decoration: none;
+}
+.formulario__registro .form-container .form-container h2 .form-container button {
+  margin-top: 20px;
+  padding: 1vh, 1vw;
 }/*# sourceMappingURL=sass.css.map */
