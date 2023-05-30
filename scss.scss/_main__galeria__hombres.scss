@@ -1,42 +1,56 @@
 .main__galeria__hombres{
-       margin:0px auto ;
+      background-image: url(../img/cielo.jpg.jpg) !important;
+       padding: 0%; 
+       margin-left: 0px auto ;
        display: flex;
        justify-content: center;
        align-items: center;
        flex-wrap: wrap;
        height: auto;
        width: 100vw;
-        background-image: url(../img/fondo-galeria.jpg);
-       background-repeat: no-repeat;
-       background-size: cover;
-      
+       background:none;
+        h2{
+          color: wheat;
+          font-size: medium;
+          font-family: fantasy;
+          font-size: 5rem;
+        }
+        
        .galeria__card{
     
             text-align: center;
-            margin: auto;
+            margin: 0px auto;
             padding:auto;
             margin-top: 10px;
             align-items:center;
             justify-content:center;
+            width: auto;
+            height: min-content;
 
       }
         
         img{
-          margin: auto;
-          padding: auto;
-          width: 320px;
+          margin: 0px auto;
+          width: 300px;
           height: 400px;
-          border: 5px solid white;
+          border: 2px solid white;
+          transition: all 1s;
+               &:hover{
+                    transform: translateY(50deg);
+                    transform: scale(1.01);
+                    width: 350px;
+                    height: 480px;
+                    
+               }
         }
           .card__contenido{
-          
             margin: 0% auto;
             height: auto;
             width: auto;
               h5 {
                 color: rgb(255, 141, 141); 
                 padding: 0vw;
-                font-size: auto;
+                font-size: 1rem;
                 text-align: center;
                 margin: 1%;
             }
@@ -56,7 +70,7 @@
 
             }
             .card__precio{
-              width:auto;
+             
               width: auto;
               background-color: rgb(253, 253, 253);
               border-bottom: 5px solid #8e8e8e;
@@ -73,4 +87,13 @@
             }
           }
         }
-    
+        .title__secciones__internas{
+                          color: rgb(15, 15, 15);
+                          background-color: rgb(0, 255, 68);
+                          width: 100%;
+                          text-align: center;
+                          padding:2%;
+                          margin-bottom: 5vh;
+                          margin-top: 5vh;
+                        }
+        

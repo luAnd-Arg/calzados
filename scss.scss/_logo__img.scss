@@ -1,21 +1,21 @@
 .logo__img {
-    background-color: black; 
+    background-color: none; 
     grid-area: logo__img !important;
-    width:100vw !important;
-    height: 3vh !important;
-    margin: 0% !important;
+    width:auto !important;
+    height: auto !important;
+    margin-left: 0% auto !important;
     padding: 0% !important;
     position: absolute !important;
-    left: auto !important;  
+    left:10px !important;  
     z-index: 1 !important;
+    margin-bottom: 10vh;
+
          img{
             border: 1px solid black !important;
             background-color: black;
             border-radius: 50px !important;
-            width: 20vw !important;
-            height: 12vh !important;
-            margin-top: 10px !important;
-            margin-left: 50px !important;
+            width: 100px!important;
+            height: 100px !important;
             z-index: 1 !important;
             animation-duration: 10s;
             animation-name: aparecer;

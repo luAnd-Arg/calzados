@@ -24,8 +24,10 @@
   /*INICIO DE ESTILO DE SECTION3*/
                       @import "_section3";    
   /*INICIO DE ESTILO DE FOOTER*/
-                        @import "_footer";
+                        @import "_footer__propio";
+                        
                        /*ESTILO DE PAGINA 1 (SECCION DAMAS)*/
+                       
   /*SE UTILIZA BOOSTRAP*/
   /*INCIO DE CONTENEDOR__P1*/
                          @import "_contenedor__p";
@@ -56,34 +58,4 @@
   /*INICIO DE barra interna de hombres*/
     @import "_barra__interna__hombres"; 
   /*MIAN DE HOMBRES*/
-    @import "_main__galeria__hombres";
-
-
-
-//  .card{
-//      height: 100%;
-//      width: auto;
-//        img{
-//         height: 60%;
-//         width: auto;
-//     }
-//   }
-//  
-//  
-//  .contenidoCard{
-//      width: auto;
-//      height: auto;
-//           p{
-//         text-align: center;
-//         font:bold;  
-//         font-family: fantasy;
-//         padding: 1%;
-//         margin: 1%;   
-//         width: auto;
-//         height: max-content;
-//         background-color: #ddd;
-//      }       
-     
-//  }
-//  
-//  
+    @import "_main__galeria__hombres";  

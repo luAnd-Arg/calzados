@@ -1,13 +1,24 @@
 .nav__menu {
     grid-area: nav__menu;           
+    position: relative;
+    left: 0px;
+    top: 0vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     width: 100vw;
-    height:20vh;
-    margin: 0% auto;
-    font-size: 20px;
+    height:auto;
+    margin-left: 0% auto;
+    margin-top: 1vh;
+    padding: 0;
+    margin-bottom: 1vh;
+    background-color: rgba(245, 245, 245, 0.265);
+    transition: background-color, padding, 3s;
+          &:hover{
+            background-color: rgba(8, 8, 8, 0.265);
+          }
+
    
     
       ul{
@@ -15,21 +26,21 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 10%;
         margin: 0% auto;
         width: 100vw;
+        height: min-content;
         
           li{
-            background:none;
-           
+            background:none;   
             width: 100vw;
+            height: auto;
             font-family:'Smokum', cursive;
-            height: 10vh;
             display: flex;
             justify-content: center;
             align-items: center;
             list-style: none;
             text-align: center;
+            font-size: auto;
             .seccion__inicio{
               font: bold;
               font-family:'Smokum', cursive;
