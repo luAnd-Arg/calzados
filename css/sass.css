@@ -11,23 +11,24 @@
   grid-area: header__cabecera;
   background-color: black;
   width: 100vw;
-  height: 25vh;
+  height: auto;
   position: relative;
   top: 0%;
   padding: 0px;
-  margin-bottom: 10%;
 }
 .header__cabecera h1 {
   text-align: center;
   position: relative;
-  top: 60%;
+  top: 0%;
   right: 0%;
-  height: auto;
   width: auto;
+  height: auto;
   text-align: center;
   font-style: oblique;
   font-family: "Smokum", cursive;
   font-size: 3rem auto;
+  margin-top: 6vh;
+  margin-bottom: 6vh;
 }
 .header__cabecera h1 a {
   color: orange;
@@ -36,6 +37,8 @@
   border-bottom: 3px solid orange;
   border-radius: 50px;
   text-decoration: none;
+  margin-top: 6vh;
+  margin-bottom: 6vh;
   width: auto;
   height: auto;
   animation-duration: 5s;
@@ -83,16 +86,17 @@
   margin-left: 0% auto !important;
   padding: 0% !important;
   position: absolute !important;
-  left: 10px !important;
+  margin-top: 1vh;
+  left: 1vw !important;
   z-index: 1 !important;
-  margin-bottom: 10vh;
+  margin-bottom: 1vh !important;
 }
 .logo__img img {
   border: 1px solid black !important;
   background-color: black;
   border-radius: 50px !important;
-  width: 100px !important;
-  height: 100px !important;
+  width: 70px !important;
+  height: 70px !important;
   z-index: 1 !important;
   animation-duration: 10s;
   animation-name: aparecer;
@@ -110,103 +114,92 @@
   left: 0px;
   top: 0vh;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: stretch;
+  text-align: center;
   align-items: center;
   text-decoration: none;
   width: 100vw;
   height: auto;
   margin-left: 0% auto;
   margin-top: 1vh;
-  padding: 0;
+  padding: 5%;
   margin-bottom: 1vh;
   background-color: rgba(245, 245, 245, 0.265);
-  transition: background-color, padding, 3s;
+  transition: background-color, 3s;
 }
 .nav__menu:hover {
   background-color: rgba(8, 8, 8, 0.265);
 }
 .nav__menu ul {
-  background: none;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0% auto;
-  width: 100vw;
-  height: -moz-min-content;
-  height: min-content;
-}
-.nav__menu ul li {
-  background: none;
-  width: 100vw;
-  height: auto;
-  font-family: "Smokum", cursive;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
+  flex-direction: row;
+  justify-content: stretch;
   text-align: center;
-  font-size: auto;
-}
-.nav__menu ul li .seccion__inicio {
-  font: bold;
-  font-family: "Smokum", cursive;
-  color: rgb(27, 171, 187);
-}
-.nav__menu ul li .seccion__inicio:hover {
-  transform: scale(1.1);
-  border: 1px solid rgb(255, 255, 255);
-  border-top: none;
-  border-right: none;
-  border-radius: 1px;
-}
-.nav__menu ul li .seccion__damas {
-  color: rgb(187, 0, 255);
-  font: bold;
-  font-family: "Smokum", cursive;
-}
-.nav__menu ul li .seccion__damas:hover {
-  color: rgb(255, 5, 255);
-  transform: scale(1.1);
-  border: 1px solid rgb(255, 255, 255);
-  border-top: none;
-  border-right: none;
-  border-radius: 1px;
-}
-.nav__menu ul li .seccion__caballeros {
-  color: rgb(255, 255, 255);
-  font: bold;
-  font-family: "Smokum", cursive;
-}
-.nav__menu ul li .seccion__caballeros:hover {
-  color: rgb(255, 255, 255);
-  transform: scale(1.1);
-  border: 1px solid rgb(255, 255, 255);
-  border-top: none;
-  border-right: none;
-  border-radius: 1px;
-}
-.nav__menu ul li .seccion__nosotros {
-  font: bold;
-  font-family: "Smokum", cursive;
-  color: cadetblue;
-}
-.nav__menu ul li .seccion__nosotros:hover {
-  color: chartreuse;
-  transform: scale(1.1);
-  border: 1px solid rgb(255, 255, 255);
-  border-top: none;
-  border-right: none;
-  border-radius: 1px;
-}
-.nav__menu ul li a {
-  text-decoration: none;
-  padding: 3%;
-  margin: 2%;
+  align-items: stretch;
+  margin-left: 0%;
   width: auto;
   height: auto;
+  padding: auto;
+}
+
+li {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  font-size: 1rem;
   text-align: center;
+  margin: auto;
+  padding: 0.1vw;
+}
+li .seccion__inicio {
+  font: normal;
   font-family: "Times New Roman", Times, serif;
-  font-size: auto;
+  color: rgba(248, 248, 248, 0.644);
+}
+li .seccion__inicio:hover {
+  transform: scale(1.01);
+  color: azure;
+}
+li .seccion__damas {
+  font: normal;
+  font-family: "Times New Roman", Times, serif;
+  color: rgba(248, 248, 248, 0.644);
+}
+li .seccion__damas:hover {
+  transform: scale(1.01);
+  color: azure;
+}
+li .seccion__caballeros {
+  font: normal;
+  font-family: "Times New Roman", Times, serif;
+  color: rgba(248, 248, 248, 0.644);
+}
+li .seccion__caballeros:hover {
+  transform: scale(1.01);
+  color: azure;
+}
+li .seccion__nosotros {
+  font: normal;
+  font-family: "Times New Roman", Times, serif;
+  color: rgba(248, 248, 248, 0.644);
+}
+li .seccion__nosotros:hover {
+  transform: scale(1.01);
+  color: azure;
+}
+li a {
+  text-decoration: none;
+  margin: 1%;
+  padding: 1%;
+  font: normal;
+  font-family: "Times New Roman", Times, serif;
+  color: rgba(248, 248, 248, 0.644);
+}
+li a:hover {
+  transform: scale(1.01);
+  color: azure;
 }
 
 /*INCIO DE ESTILO DE SECCION MAIN*/
@@ -665,11 +658,40 @@
   cursor: pointer;
 }
 
+.contenedor__p .logo__img_ {
+  background-color: none;
+  width: auto !important;
+  height: auto !important;
+  margin-left: 0% auto !important;
+  padding: 0% !important;
+  margin-top: 10px;
+  position: absolute !important;
+  top: 0px;
+  left: 2px !important;
+  z-index: 1 !important;
+  margin-bottom: 1vh !important;
+}
+.contenedor__p .logo__img_ img {
+  border: 1px solid black !important;
+  background-color: black;
+  border-radius: 50px !important;
+  width: 70px !important;
+  height: 70px !important;
+  z-index: 1 !important;
+  animation-duration: 10s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
+}
+.contenedor__p .logo__img_ img:hover {
+  transform: scale(1.01) !important;
+  border-color: orange !important;
+}
+
 /*SE REPITE LOGO__IMG*/
 /*SE REPITE HEADER__CABECERA*/
 /*INICIO DE navMenu_mujer*/
 .navMenu_mujer {
-  background-color: #fc00ff !important;
+  background-image: url(../img/tunel.jpg.jpg) !important;
   color: #fafafa !important;
   width: 100vw;
   height: auto;

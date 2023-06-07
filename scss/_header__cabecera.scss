@@ -1,25 +1,27 @@
 /*ESTILOS DE LA SECCION HEADER__CABECERA*/
 .header__cabecera { 
    grid-area: header__cabecera;
-   background-color: black;
+   background-color:black;
    width: 100vw;
-   height:25vh;
+   height:auto;
    position: relative;
    top: 0%;
    padding: 0px;
-   margin-bottom: 10%;
    
       h1{  
         text-align: center;
         position: relative;
-        top: 60%; 
+        top: 0%; 
         right: 0%;
-        height: auto;
         width: auto;
+        height: auto;
         text-align: center;
         font-style: oblique;
         font-family:'Smokum', cursive;
         font-size:3rem auto; 
+        margin-top: 6vh;
+        margin-bottom: 6vh;
+           
         
           a{
            color: orange; 
@@ -28,6 +30,8 @@
            border-bottom: 3px solid orange;
            border-radius: 50px;
            text-decoration: none;
+           margin-top: 6vh;
+           margin-bottom: 6vh;
            width: auto;
            height: auto;
            animation-duration: 5s;

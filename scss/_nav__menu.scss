@@ -1,0 +1,120 @@
+.nav__menu {
+    grid-area: nav__menu;           
+    position: relative;
+    left: 0px;
+    top: 0vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:stretch;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    width: 100vw;
+    height:auto;
+    margin-left: 0% auto;
+    margin-top: 1vh;
+    padding: 5%;
+    margin-bottom: 1vh;
+    background-color: rgba(245, 245, 245, 0.265);
+    transition: background-color, 3s;
+          &:hover{
+            background-color: rgba(8, 8, 8, 0.265);
+          }     
+   
+          
+      ul{
+        display: flex;
+        flex-direction: row;
+        justify-content:stretch;
+        text-align: center;
+        align-items: stretch;
+        margin-left:0%;
+        width: auto;
+        height:auto;
+        padding:auto;
+
+        
+        // .buscador{
+        //     font-size: small;  
+        //     font-style: italic;
+        //     font-size: 1rem;
+        //     display: flex;
+        //     flex-direction: column;
+        //     justify-content: center;
+        //     align-items: center;
+        //     margin-left: 0% auto;
+        //     width: 5vw ;
+        //     height: auto;
+        //     background-color: chartreuse;
+        //     .buscador_{
+        //       display: flex;
+        //       flex-direction: row;
+        //       text-align: center;
+        //       justify-content: center;
+        //       align-items: center;
+        //       .btn__buscador{
+        //         color: aqua;
+        //         width: 1rem;
+        //       }
+              
+            }
+          }     
+          li{
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            font-size: 1rem;
+            text-align: center;
+            margin: auto;
+            padding:0.1vw;
+            .seccion__inicio{
+               font: normal;
+                font-family: 'Times New Roman', Times, serif;
+                color: rgba(248, 248, 248, 0.644);
+                  &:hover{
+                    transform: scale(1.01);
+                    color: azure;
+              }
+                 
+            }
+            .seccion__damas{
+               font: normal;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgba(248, 248, 248, 0.644);
+              &:hover{
+                 transform: scale(1.01);
+                 color: azure;
+                }  
+            }
+            .seccion__caballeros{
+              font: normal;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgba(248, 248, 248, 0.644);
+              &:hover{
+                 transform: scale(1.01);
+                 color: azure;
+              }
+            }
+            .seccion__nosotros{
+             font: normal;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgba(248, 248, 248, 0.644);
+              &:hover{
+                 transform: scale(1.01);
+                 color: azure;    
+              } 
+            }
+                a {
+                  text-decoration: none;
+                 margin: 1%;   
+                 padding: 1%;
+                font: normal;
+                font-family: 'Times New Roman', Times, serif;
+                color: rgba(248, 248, 248, 0.644);
+                &:hover{
+                 transform: scale(1.01);
+                 color: azure;
+               }
+            }
+          }

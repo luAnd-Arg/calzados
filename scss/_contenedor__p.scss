@@ -60,6 +60,35 @@
                       }
                     }
               
+.contenedor__p{
+  .logo__img_ {
+        background-color: none; 
+        width:auto !important;
+        height: auto !important;
+        margin-left: 0% auto !important;
+        padding: 0% !important;
+        margin-top: 10px;
+        position: absolute !important;
+        top: 0px;
+        left:2px !important;  
+        z-index: 1 !important;
+        margin-bottom: 1vh !important;
 
-
-    
+            img{
+                border: 1px solid black !important;
+                background-color: black;
+                border-radius: 50px !important;
+                width: 70px!important;
+                height: 70px !important;
+                z-index: 1 !important;
+                animation-duration: 10s;
+                animation-name: aparecer;
+                animation-iteration-count: infinite;
+                &:hover{
+                  transform: scale(1.01) !important;
+                  border-color: orange !important;
+                  
+                }           
+              }
+            }
+          }
