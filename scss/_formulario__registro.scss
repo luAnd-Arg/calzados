@@ -1,36 +1,69 @@
 .formulario__registro {
       background-image: url("../img/cielo.jpg.jpg");
-      background-size: cover;
       background-position: center;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-     
+      flex-direction: column;
+      .form__text{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        padding: 1%;
+        background-color: black;
+        color: rgb(240, 235, 233);
+      
+        a{  
+            background-color: black;
+            color:rgb(250, 162, 0);
+            text-align: center;
+            text-decoration: none;
+              &:hover{
+                color: azure;
+              }
+    }
+      .form__title{
+            display: flex;
+            flex-direction: row;
+            font-size: 1rem;
+            color: rgb(255, 198, 29);
+            background-color: rgb(0, 0, 0);
+            width: auto;
+            height: auto;
+            margin-left: 0px auto;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            padding: 1%;     
+         }
+      }
    
-        .form-container {
-        background-color: rgba(255, 255, 255, 0.8);
+        .formulario__contenido {
+        background-color: rgba(180, 180, 180, 0.344);
         padding: 20px;
         border-radius: 5px;
-        width: 80%;
-        max-width: 400px;
+        width: auto;
+        height:auto;
         text-align: center;
-        position: relative;
-        left: 0vw;
-
-            .form-container h2 {
-            margin-top: 0;
-            
-
-                .form-container a {
-                text-decoration: none;
-                }
-
-                    .form-container button {
-                    margin-top: 20px;
-                    padding: 1vh,1vw;                    
-                }
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+                .formulario__contenido__inputs{
+                    background-color: aquamarine;
+                    text-align: center;
+                    width: 200px;
+                    height: 30px;
+                    border: 1px solid orange;
+                    border-radius: none;
+                    padding: 2%;
+                    margin: 1%;
                 }
             }
         }
-
+        .formulario__registro{
+            alt{
+    color: aliceblue;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 3%;
+   }
+        }

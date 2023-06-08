@@ -1,55 +1,55 @@
-.barra__interna__mujeres {
-    background-color: #8e8e8e(169, 169, 169);
-    justify-content:end;
-    align-items: end;
-    background-image: url(../img/mujer-comprando.jpg);
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: center ;
-    padding-left:0%;
-    padding-right: 0%;    
-    padding-top: 0%;
-    padding-bottom: 0%;
-    border-radius: 1px;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    margin-left: 50px auto;
-    width: 100vw;
-    height: 50%;
-    position: relative;
-    top: 0%;
-    left: 0%;
-    .secciones__mujeres{
-        background-color: #f710ff;
-        margin: 0 auto;
-        width: max-content;
-        height: 100%;
-        position: relative;
-        top: 0%;
-        left: 10%;
-    }  
-      .seccion__mujeres{
-            display: flex;
-            flex-direction: column;
-            color: #ffffff;
-            text-decoration: none; 
-             font-size: 1rem;
-             padding: 2vw;
-             margin: 0% auto;
-             width: max-content;
-             height: auto;
-             position: relative;
-             top: 0%;
-             left: 0%;
-             opacity: 100%;
-              &:hover{
-                    transform: scale(1.01) ;
-                    color: #da06ff ;
-                    background-color: #ffffff88;
-                    background-size: cover;
-                    width: auto;
-                    text-align: center;
-                    font-size: auto;
-              }                    
-     }
-}
+// .barra__interna__mujeres {
+//     background-color: #8e8e8e(169, 169, 169);
+//     justify-content:end;
+//     align-items: end;
+//     background-image: url(../img/mujer-comprando.jpg);
+//     background-repeat: no-repeat;
+//     background-position-x: center;
+//     background-position-y: center ;
+//     padding-left:0%;
+//     padding-right: 0%;    
+//     padding-top: 0%;
+//     padding-bottom: 0%;
+//     border-radius: 1px;
+//     margin-top: 10vh;
+//     margin-bottom: 10vh;
+//     margin-left: 50px auto;
+//     width: 100vw;
+//     height: 50%;
+//     position: relative;
+//     top: 0%;
+//     left: 0%;
+//     .secciones__mujeres{
+//         background-color: #f710ff;
+//         margin: 0 auto;
+//         width: max-content;
+//         height: 100%;
+//         position: relative;
+//         top: 0%;
+//         left: 10%;
+//     }  
+//       .seccion__mujeres{
+//             display: flex;
+//             flex-direction: column;
+//             color: #ffffff;
+//             text-decoration: none; 
+//              font-size: 1rem;
+//              padding: 2vw;
+//              margin: 0% auto;
+//              width: max-content;
+//              height: auto;
+//              position: relative;
+//              top: 0%;
+//              left: 0%;
+//              opacity: 100%;
+//               &:hover{
+//                     transform: scale(1.01) ;
+//                     color: #da06ff ;
+//                     background-color: #ffffff88;
+//                     background-size: cover;
+//                     width: auto;
+//                     text-align: center;
+//                     font-size: auto;
+//               }                    
+//      }
+// }

@@ -10,45 +10,53 @@
   <enlace rel="preconectar" href="https://fonts.googleapis.com">
   <enlace rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
   <enlace href="https: //fonts.googleapis.com/css2? family= Smokum & display=swap" rel="hoja de estilo">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/sass.css">
   <title>Calzados LuAnd - Sección Nosotros</title>
-</head>
-<body class="container__general">
-  <!-- Inicio del Cointeiner General -->
-  <!-- Logo -->
-  <div class="logo__img">
-      <a href="../index.html"><img src="../img/logo.png" alt="logo de Calzados LuAnd" class=""></a>
-  </div>
+</head> 
+<!-- Inicio del Cointeiner General -->
+  <body class="container__general">
   <!-- comienzo del Header__cabecera -->
-  <header class="header__cabecera">
-    <h1><a href="../index.html">Calzados LuAnd</a></h1>
-  <!-- comienzo de nav__menu -->
-  <div class="nav__menu">
-    <ul> 
-      <li>
-        <a class="seccion__inicio" href="../index.html">Inicio</a>
-      </li>
-      <li>
-        <a class="seccion__damas" href="./seccionDamas.html">Seccion Damas</a>
-      </li>
-      <li>
-        <a class="seccion__caballeros" href="./seccionCaballeros.html">Seccion Caballeros</a>
-      </li>
-      <li>
-        <a class="seccion__nosotros" href="./nosotros.html">Nosotros</a>
-      </li>
-    </ul>
-  </div>
-  </header>
+    <header class="header__cabecera">
+      <!-- Logo -->
+       <div class="logo__img">
+        <a href="../index.html"><img src="../img/logo.png" alt="logo" class=""></a>
+    </div>
+			<h1><a href="../index.html">Calzados LuAnd</a></h1>
+		<!-- nav -->	
+		<nav class="navbar navbar-expand-lg bg-primary nav__menu" data-bs-theme="dark">
+    		<div class="container-fluid">
+					<button class="navbar-toggler nav__btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="true" aria-label="Toggle navigation">
+						<span class="nav__span">Menu</span>
+					</button>
+				<div class="collapse navbar-collapse" id="navbarColor02">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0 nav__ul">
+						<li class="nav-item nav__li">
+							<a class="nav-link" aria-current="page" href="../index.html">Incio</a>
+						</li>
+						<li class="nav-item nav__li">
+							<a class="nav-link" href="./seccionDamas.html">Seccion Damas</a>
+						</li>
+						<li class="nav-item nav__li">
+							<a class="nav-link" href="./seccionCaballeros.html">Seccion Caballeros</a>
+						</li>
+						<li class="nav-item nav__li">
+							<a class="nav-link" href="./nosotros.html">Nosotros</a>
+						</li>
+					</ul>
+					<form class="d-flex form__nav" role="search">
+						<input class="form-control me-2 input__nav" type="search" placeholder="¿que necesitas?" aria-label="Buscar">
+							<button class="btn btn-outline-light" type="submit">Buscar</button>
+					</form>
+				</div>
+    		</div>
+		</nav>
+		</header>
   <!-- INICIOO DE GALERIA -->
-  <div class="main">  
-    <!-- PRIMERA IMAGEN -->
-    <div class="main__galeria">
-      <div class="galeria__card"> 
-        <h2>pagina en mantenimiento</h2>
-  	</div> <!-- DIV DE MAIN__GALERIA -->
-    </div> <!-- FIN DE MAIN -->  
-  <section class="section1">
+ <section class="main">  
+        <h2  class="subtittle__nosotros" >Pagina en Mantenimiento</h2>
+ </section>  
+<section class="section1">
       <p>Ven a nuestro local</p>
       <iframe title="Esta es la ubicacion exacta de donde se encuentra el Local Comercial de la Marca Calzados LuAnd. La misma esta Ubicacda en la Provincia de Tucuman ,al suroeste de la Ciudad Capital" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d14238.476045815742!2d-65.28326958417892!3d-26.852067576197644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDUxJzA3LjQiUyA2NcKwMTYnMjIuNyJX!5e0!3m2!1ses!2sar!4v1684623466004!5m2!1ses!2sar" width="" height="" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="ubicacion"></iframe>
   </section>
@@ -67,5 +75,6 @@
 			<p>Información de contacto: luccasmandrada1994@gmail.com | Teléfono: <a href="https://wa.me/qr/SKZR6ATJGOEIM1">3813321379</a> --- Derechos reservados &copy; 2023 LuAnd Calzados</p>
 		</div>
 	</footer> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>

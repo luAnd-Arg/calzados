@@ -3,20 +3,19 @@
       margin: 0%;
       padding: 0%;
       box-sizing: border-box;
+      
     }
-
+    
   /*ESTILOS DE LA SECCION HEADER__CABECERA*/
       @import "_header__cabecera";
   /*ESTILOS DEL GRID*/
         @import "_container__general";
-  /*ESTILOS DE SECCION LOGO*/
-          @import "_logo__img";
   /*ESTILO DE LA SECCION NAV__MENU*/
             @import "_nav__menu";
   /*INCIO DE ESTILO DE SECCION MAIN*/
               @import "_main";
   /*INICIO DE ESTILO SECCION ALSIDE__PUBLICIDAD*/      
-                @import "_alside__publicidad";
+                @import "_aside__publicidad";
   /*INICIO DE ESTILO DE SECTION1*/
                   @import "_section1";
   /*INICIO DE ESTILO DE SECTION2*/
@@ -29,16 +28,11 @@
                        /*ESTILO DE PAGINA 1 (SECCION DAMAS)*/
                        
   /*SE UTILIZA BOOSTRAP*/
-  /*INCIO DE CONTENEDOR__P1*/
-                         @import "_contenedor__p";
-    /*SE REPITE LOGO__IMG*/
+ 
     /*SE REPITE HEADER__CABECERA*/
-    /*INICIO DE navMenu_mujer*/
-                            @import "_navMenu_mujer";
+  
     /*INICIO DE barra__internaMujeres*/
                               @import "_barra__interna__mujeres";
-    /*CARRUSEL*/
-                                @import "_carrusel__propio";
     /*INICIO DE MAIN*/
                                   @import "_main__galeria__mujer";
     /*INICIO DE SECTION3
@@ -54,7 +48,7 @@
    INCIO DE CABECERA 
    SE REPITE header__cabecera
    INICIO DE navMenu*/
-   @import "_nav__menu__hombres";
+
   /*INICIO DE barra interna de hombres*/
     @import "_barra__interna__hombres"; 
   /*MIAN DE HOMBRES*/
@@ -62,3 +56,5 @@
     
                   // ESTILOS DE LA PAGINA DE CONTACTO
     @import "_formulario__registro";
+
+    @import "_formulario__iniciar__sesion";

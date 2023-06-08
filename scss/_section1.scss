@@ -6,13 +6,10 @@
       justify-content: center;
       background-color: white;
       text-align: center;
-      margin-top: 10vh;
-      margin-bottom: 10vh;
-      transition: padding ,background-color 2s;
-      width: auto;
+      transition: background-color 2s;
+      width: 100vw;
       height: auto;
                &:hover{
-                    padding: 2%;
                     background-color: gray;
                }
           p{
@@ -24,13 +21,15 @@
                width:auto;
                padding: 1rem;
                height: auto;
-               margin-bottom: 0vh;
+               margin-bottom: 3vh;
+               margin-top: 3vh;
           }
 
     }
     .ubicacion {
-      width: 300px;
-      height: 300px;
+      width: 50vw;
+      height: 50vh;
+      margin-bottom: 4vh;
     }
   
   

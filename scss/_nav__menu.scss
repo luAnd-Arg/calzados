@@ -1,20 +1,21 @@
 .nav__menu {
-    grid-area: nav__menu;           
+    grid-area: nav__menu;  
+    background-image: url(../img/cielo.jpg.jpg);   
+    background-size: cover;      
     position: relative;
     left: 0px;
-    top: 0vh;
+    top: 0px;
     display: flex;
     flex-direction: row;
-    justify-content:stretch;
+    justify-content:center;
+    align-content: center;
     text-align: center;
     align-items: center;
     text-decoration: none;
     width: 100vw;
     height:auto;
-    margin-left: 0% auto;
-    margin-top: 1vh;
     padding: 5%;
-    margin-bottom: 1vh;
+    margin-left: 0% auto;
     background-color: rgba(245, 245, 245, 0.265);
     transition: background-color, 3s;
           &:hover{
@@ -22,99 +23,51 @@
           }     
    
           
-      ul{
+      nav__ul{
         display: flex;
         flex-direction: row;
-        justify-content:stretch;
+        justify-content:center;
         text-align: center;
-        align-items: stretch;
-        margin-left:0%;
-        width: auto;
+        align-items: center;
+        align-content: center;
+        margin-left:0% auto;
+        width: min-content;
         height:auto;
         padding:auto;
-
-        
-        // .buscador{
-        //     font-size: small;  
-        //     font-style: italic;
-        //     font-size: 1rem;
-        //     display: flex;
-        //     flex-direction: column;
-        //     justify-content: center;
-        //     align-items: center;
-        //     margin-left: 0% auto;
-        //     width: 5vw ;
-        //     height: auto;
-        //     background-color: chartreuse;
-        //     .buscador_{
-        //       display: flex;
-        //       flex-direction: row;
-        //       text-align: center;
-        //       justify-content: center;
-        //       align-items: center;
-        //       .btn__buscador{
-        //         color: aqua;
-        //         width: 1rem;
-        //       }
-              
-            }
-          }     
-          li{
-            width: auto;
+          nav__li{
+            width: min-content;
             height: auto;
             display: flex;
             flex-direction: row;
             font-size: 1rem;
+            justify-content:center;
             text-align: center;
-            margin: auto;
-            padding:0.1vw;
-            .seccion__inicio{
-               font: normal;
-                font-family: 'Times New Roman', Times, serif;
-                color: rgba(248, 248, 248, 0.644);
-                  &:hover{
-                    transform: scale(1.01);
-                    color: azure;
-              }
-                 
+            align-items: center;
+            align-content: center;    
             }
-            .seccion__damas{
-               font: normal;
-            font-family: 'Times New Roman', Times, serif;
-            color: rgba(248, 248, 248, 0.644);
-              &:hover{
-                 transform: scale(1.01);
-                 color: azure;
-                }  
-            }
-            .seccion__caballeros{
-              font: normal;
-            font-family: 'Times New Roman', Times, serif;
-            color: rgba(248, 248, 248, 0.644);
-              &:hover{
-                 transform: scale(1.01);
-                 color: azure;
-              }
-            }
-            .seccion__nosotros{
-             font: normal;
-            font-family: 'Times New Roman', Times, serif;
-            color: rgba(248, 248, 248, 0.644);
-              &:hover{
-                 transform: scale(1.01);
-                 color: azure;    
-              } 
-            }
-                a {
-                  text-decoration: none;
-                 margin: 1%;   
-                 padding: 1%;
-                font: normal;
-                font-family: 'Times New Roman', Times, serif;
-                color: rgba(248, 248, 248, 0.644);
-                &:hover{
-                 transform: scale(1.01);
-                 color: azure;
-               }
+          }
+          .nav__btn{
+                    width: auto;
+                    height: auto;
+                      border: 5px solid rgba(255, 0, 0, 0);
+                        .nav__span{
+                          color: #fbf5f5;
+                          font-size: 1rem;
+        }
+      }
+    }
+          .form__nav{
+            display: flex;
+            flex-direction: row;
+            justify-content:center;
+            text-align: center;
+            align-items: center;
+            align-content: center;
+            width: min-content;
+            margin-left: 0 auto;
+            .input__nav{
+              
+              width: min-content;
+              text-align:center;
             }
           }
