@@ -7,54 +7,24 @@
     }
     
   /*ESTILOS DE LA SECCION HEADER__CABECERA*/
-      @import "_header__cabecera";
+   @import "_header__cabecera";
   /*ESTILOS DEL GRID*/
-        @import "_container__general";
+    @import "_container__general";
   /*ESTILO DE LA SECCION NAV__MENU*/
-            @import "_nav__menu";
+     @import "_nav__menu";
   /*INCIO DE ESTILO DE SECCION MAIN*/
-              @import "_main";
+      @import "_main";
   /*INICIO DE ESTILO SECCION ALSIDE__PUBLICIDAD*/      
-                @import "_aside__publicidad";
+       @import "_aside__publicidad";
   /*INICIO DE ESTILO DE SECTION1*/
-                  @import "_section1";
+        @import "_section1";
   /*INICIO DE ESTILO DE SECTION2*/
-                    @import "_section2";
+         @import "_section2";
   /*INICIO DE ESTILO DE SECTION3*/
-                      @import "_section3";    
+          @import "_section3";    
   /*INICIO DE ESTILO DE FOOTER*/
-                        @import "_footer__propio";
-                        
-                       /*ESTILO DE PAGINA 1 (SECCION DAMAS)*/
-                       
-  /*SE UTILIZA BOOSTRAP*/
- 
-    /*SE REPITE HEADER__CABECERA*/
-  
-    /*INICIO DE barra__internaMujeres*/
-                              @import "_barra__interna__mujeres";
-    /*INICIO DE MAIN*/
-                                  @import "_main__galeria__mujer";
-    /*INICIO DE SECTION3
-    SE REPITE
-    INICIO DE FOOTER
-    SE REPITE
-    ESTILOS PAGINA1 (SECCION DAMAS
-                    INCIO DE ESTILOS DE LA PAGINA 2(SECCION CABALLEROS
-   INICIO DE ESTILO CONTENEDOR GENERAL
-   SE REPITE contenedor__p1
-   INICIO DE ESTILO DE LOGO_IMG
-   SE REPITE logo__img
-   INCIO DE CABECERA 
-   SE REPITE header__cabecera
-   INICIO DE navMenu*/
-
-  /*INICIO DE barra interna de hombres*/
-    @import "_barra__interna__hombres"; 
-  /*MIAN DE HOMBRES*/
-    @import "_main__galeria__hombres"; 
-    
-                  // ESTILOS DE LA PAGINA DE CONTACTO
+           @import "_footer__propio"; 
+// ESTILOS DE LA PAGINA DE CONTACTO
     @import "_formulario__registro";
 
     @import "_formulario__iniciar__sesion";

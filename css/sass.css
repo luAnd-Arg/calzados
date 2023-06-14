@@ -9,7 +9,7 @@
 /*ESTILOS DE LA SECCION HEADER__CABECERA*/
 .header__cabecera {
   grid-area: header__cabecera;
-  background-color: none;
+  background-color: black;
   width: 100vw;
   height: auto;
   position: relative;
@@ -109,7 +109,7 @@
   width: 100vw;
   height: 100vh;
   margin: 0px auto;
-  background-color: darkgray;
+  background-color: rgb(0, 0, 0);
 }
 .container__general alt {
   color: aliceblue;
@@ -198,7 +198,7 @@
 /*INCIO DE ESTILO DE SECCION MAIN*/
 .main {
   grid-area: main;
-  background-image: url(../img/fondo-galeria.jpg) !important;
+  background-image: url(../img/cielo.jpg.jpg) !important;
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: 0% auto;
@@ -209,51 +209,63 @@
   width: 100vw;
   height: auto;
 }
-.main .carrusel__propio {
+.main .carrusel__propio__hombres {
   margin-top: 10vh;
   margin-bottom: 10vh;
   height: auto;
   width: 100vw;
-  background-image: url(../img/detailed_hand_painted_pink_watercolour_background_0509.jpg);
+  background-image: url(../img/cielo.jpg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
   background-position-y: center;
   display: flex;
+  flex-direction: column;
   justify-items: center;
   justify-content: center;
   align-items: center;
 }
-.main .imagenes__carrusel img {
+.main .imagenes__carrusel__hombres img {
   height: 80vh;
-  width: 30vw;
+  width: auto;
+  margin-left: 0% auto;
 }
-.main .carrusel__propio__contenido {
+.main .imagenes__carrusel__hombres img .carrusel__propio__contenido__hombres {
+  height: auto;
+  width: 100vw;
+  text-align: center;
+  margin-left: 0vw;
+}
+.main .descripcion__carrusel__hombres {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   height: auto;
   width: auto;
 }
-.main .carrusel__propio__contenido .descripcion__carrusel .title__carrusel {
-  color: rgb(0, 0, 0);
-  background-color: rgba(240, 248, 255, 0.381);
+.main .descripcion__carrusel__hombres .title__carrusel__hombres {
+  color: orange;
+  background-color: rgba(7, 7, 7, 0.454);
   width: -moz-max-content;
   width: max-content;
   padding: 1%;
   margin-left: 0% auto;
-  border-radius: 50px;
-  background-image: url(../img/5607231.jpg);
+  position: relative;
+  top: 0vh;
 }
-.main .carrusel__propio__contenido .descripcion__carrusel .descripcion__carrusel {
-  color: rgb(0, 0, 0);
-  background-color: rgba(240, 248, 255, 0.381);
+.main .descripcion__carrusel__hombres .text__carrusel__hombres {
+  color: orange;
+  background-color: rgba(7, 7, 7, 0.454);
   width: -moz-max-content;
   width: max-content;
   padding: 1%;
   margin-left: 0% auto;
-  border-radius: 50px;
-  background-image: url(../img/5607231.jpg);
+  position: relative;
+  bottom: 0vh;
 }
-
-.title__ofertas {
+.main .title__ofertas {
   color: rgb(255, 255, 255);
   margin-left: 0 auto;
   text-align: center;
@@ -264,8 +276,7 @@
   margin-top: 10vh;
   margin-bottom: 10vh;
 }
-
-.cuenta {
+.main .cuenta {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -279,7 +290,7 @@
   margin-top: 5vh;
   margin-bottom: 5vh;
 }
-.cuenta a {
+.main .cuenta a {
   padding: 2%;
   color: greenyellow;
   background-color: black;
@@ -294,7 +305,7 @@
   margin: 0 auto;
   margin-bottom: 50px;
 }
-.cuenta .crear__cuenta__link {
+.main .cuenta .crear__cuenta__link {
   text-align: center;
   color: greenyellow;
   background-color: black;
@@ -306,16 +317,14 @@
   border-radius: 10px;
   color: rgb(255, 255, 255);
 }
-
-.crear__cuenta__text {
+.main .crear__cuenta__text {
   color: rgb(0, 0, 0);
   background-color: rgba(255, 0, 0, 0.368);
   font-size: 1.1rem;
   margin-left: 0% auto;
   margin-bottom: 50px;
 }
-
-.main__galeria {
+.main .main__galeria {
   margin: 0px auto;
   display: flex;
   justify-content: center;
@@ -325,10 +334,10 @@
   width: 100vw;
   background: none;
 }
-.main__galeria .title__secciones__internas {
+.main .main__galeria .title__secciones__internas {
   margin-top: 5vh;
   margin-bottom: 5vh;
-  color: orange;
+  color: #ffa500;
   text-align: center;
   background-color: #100f0f;
   font-size: medium;
@@ -339,7 +348,7 @@
   padding: 3%;
   margin-left: 0 auto;
 }
-.main__galeria .galeria__card {
+.main .main__galeria .galeria__card {
   text-align: center;
   margin: 0px auto;
   padding: auto;
@@ -349,29 +358,33 @@
   width: auto;
   height: auto;
 }
-.main__galeria img {
+.main .main__galeria img {
   margin: 0px auto;
-  width: 280px;
-  height: 380px;
-  border: 1px solid white;
-  transition: height 1s;
-}
-.main__galeria img:hover {
+  width: 400px;
   height: 400px;
+  padding: auto;
+  border-radius: 50px;
+  border: 1px solid white;
+  opacity: 70%;
+  transition: opacity, border 0s;
 }
-.main__galeria .card__contenido {
+.main .main__galeria img:hover {
+  opacity: 100%;
+  border: orange 1.5px solid;
+}
+.main .main__galeria .card__contenido {
   margin: 0% auto;
   height: auto;
   width: auto;
 }
-.main__galeria .card__contenido .tittle_card {
+.main .main__galeria .card__contenido .tittle_card {
   color: rgb(255, 141, 141);
   padding: 0vw;
   font-size: 1rem;
   text-align: center;
   margin: 1%;
 }
-.main__galeria .card__contenido .card__text {
+.main .main__galeria .card__contenido .card__text {
   font-size: auto;
   color: rgb(0, 0, 0);
   background-color: aliceblue;
@@ -385,7 +398,7 @@
   margin-bottom: 1vh;
   margin-top: 1vh;
 }
-.main__galeria .card__contenido .card__precio {
+.main .main__galeria .card__contenido .card__precio {
   width: auto;
   background-color: rgb(253, 253, 253);
   border-bottom: 5px solid #8e8e8e;
@@ -399,7 +412,6 @@
   border-top: 2vh;
   font-size: bold;
 }
-
 .main .introduccion__registro {
   background-color: rgba(0, 0, 0, 0.4705882353);
   margin-top: 0px;
@@ -416,51 +428,6 @@
   font-family: Georgia, "Times New Roman", Times, serif;
   background-color: #000000;
 }
-
-.main .carrusel__propio__hombres {
-  margin-top: 10vh;
-  margin-bottom: 10vh;
-  height: auto;
-  width: 100vw;
-  background-image: url(../img/cielo.jpg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-x: center;
-  background-position-y: center;
-  display: flex;
-  justify-items: center;
-  justify-content: center;
-  align-items: center;
-}
-.main .imagenes__carrusel__hombres img {
-  height: 80vh;
-  width: 30vw;
-}
-.main .carrusel__propio__contenido__hombres {
-  height: auto;
-  width: auto;
-}
-.main .carrusel__propio__contenido__hombres .descripcion__carrusel .title__carrusel {
-  color: rgb(0, 0, 0);
-  background-color: rgba(240, 248, 255, 0.381);
-  width: -moz-max-content;
-  width: max-content;
-  padding: 1%;
-  margin-left: 0% auto;
-  border-radius: 50px;
-  background-image: url(../img/5607231.jpg);
-}
-.main .carrusel__propio__contenido__hombres .descripcion__carrusel .text__carrusel__hombres {
-  color: rgb(0, 0, 0);
-  background-color: rgba(240, 248, 255, 0.381);
-  width: -moz-max-content;
-  width: max-content;
-  padding: 1%;
-  margin-left: 0% auto;
-  border-radius: 50px;
-  background-image: url(../img/5607231.jpg);
-}
-
 .main .subtittle__nosotros {
   color: #000000;
   background-color: rgba(251, 251, 251, 0.5137254902);
@@ -475,7 +442,6 @@
   font-size: 1.2rem;
   padding: 5%;
 }
-
 .main alt {
   color: aliceblue;
   background-color: rgb(0, 0, 0);
@@ -490,7 +456,7 @@
   width: 100vw;
   height: auto;
   padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding-bottom: 5vh;
   margin: 0% auto;
   display: flex;
   justify-content: center;
@@ -508,10 +474,8 @@
   animation-iteration-count: infinite;
 }
 .aside__publicidad .img__publicidad:hover {
-  transform: scale(1.01);
   width: 400px;
 }
-
 .aside__publicidad alt {
   color: aliceblue;
   background-color: rgb(0, 0, 0);
@@ -730,26 +694,6 @@
   padding: 3%;
 }
 
-/*ESTILO DE PAGINA 1 (SECCION DAMAS)*/
-/*SE UTILIZA BOOSTRAP*/
-/*SE REPITE HEADER__CABECERA*/
-/*INICIO DE barra__internaMujeres*/
-/*INICIO DE MAIN*/
-/*INICIO DE SECTION3
- SE REPITE
- INICIO DE FOOTER
- SE REPITE
- ESTILOS PAGINA1 (SECCION DAMAS
-                 INCIO DE ESTILOS DE LA PAGINA 2(SECCION CABALLEROS
-INICIO DE ESTILO CONTENEDOR GENERAL
-SE REPITE contenedor__p1
-INICIO DE ESTILO DE LOGO_IMG
-SE REPITE logo__img
-INCIO DE CABECERA 
-SE REPITE header__cabecera
-INICIO DE navMenu*/
-/*INICIO DE barra interna de hombres*/
-/*MIAN DE HOMBRES*/
 .formulario__registro {
   background-image: url("../img/cielo.jpg.jpg");
   background-position: center;
