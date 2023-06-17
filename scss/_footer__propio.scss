@@ -7,7 +7,7 @@
       margin-left: 0% auto;
       width: 100vw;
       height:auto;
-      
+      background-color: $backgroundTerciarios;
           .footer__contenido {
           display: flex;
           flex-direction: row;
@@ -20,9 +20,7 @@
           position: relative;   
           left: 0%;       
           bottom: 0vh;
-          
-                     p{  
-                        
+                     p{                          
                         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
                         color: rgb(243, 242, 242) ;
                         font-size: 1rem;
@@ -35,11 +33,9 @@
                                   padding: 2%;
                                   color: black;
               }
-
                         a{
                           color: rgb(0, 149, 255) ;
                           font: bold ;
-                          
                           &:hover{
                             color: whitesmoke ;
                             background-color: rgb(2, 0, 0) ;

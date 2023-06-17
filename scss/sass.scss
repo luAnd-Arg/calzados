@@ -5,8 +5,12 @@
       box-sizing: border-box;
       
     }
-    
-  /*ESTILOS DE LA SECCION HEADER__CABECERA*/
+    $colorPrimario: orange(212, 255, 0);
+    $colorSecundario: grey;
+    $backgroundPrincipales:rgba(152, 145, 132, 0.768);
+    $backgroundSecundarios:rgba(152, 145, 132, 0.989);
+    $backgroundTerciarios:rgba(152, 145, 132, 0.398);
+      /*ESTILOS DE LA SECCION HEADER__CABECERA*/
    @import "_header__cabecera";
   /*ESTILOS DEL GRID*/
     @import "_container__general";
@@ -25,6 +29,8 @@
   /*INICIO DE ESTILO DE FOOTER*/
            @import "_footer__propio"; 
 // ESTILOS DE LA PAGINA DE CONTACTO
-    @import "_formulario__registro";
+            @import "_formulario__registro";
 
-    @import "_formulario__iniciar__sesion";
+            @import "_formulario__iniciar__sesion";
+            // estilode la pagina 404
+            @import "_404"

@@ -1,5 +1,4 @@
 .section2 { 
-  
     grid-area: section2; 
     display: inline-block;
     position: relative;
@@ -12,7 +11,7 @@
     margin-bottom: 5vh;
     height: auto;
     width: 100vw;     
-
+    background-color: $backgroundSecundarios;
   
               p { 
                   color: rgb(0, 0, 0);

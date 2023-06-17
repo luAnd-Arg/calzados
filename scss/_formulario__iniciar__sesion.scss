@@ -1,25 +1,30 @@
 .formulario__iniciar__sesion{
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f2f2f2;
-  border-radius: 5px;
-  font-size: medium;
-  font-family: 'Times New Roman', Times, serif;
-  font-style: normal;
-  margin-bottom: 10vh;
-  margin-top: 10vh;
-}
-
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(243, 240, 234);
+    border-radius: 5px;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+    border-left: 3px solid orange;
+      border-bottom: 5px solid orange;
+      border-top: 1.5px solid orange;
+      border-right: 0.5px solid orange;
+      border-radius: 50px}
 h2 {
   text-align: center;
   margin-bottom: 20px;
   color: black;
 }
-
 .form__group {
   margin-bottom: 20px;
   color: black;
+  padding: 2%;
 }
 
 label {
@@ -48,7 +53,23 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #eaa401;
+}
+p{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  color: black;
+  padding: 3%;
+  margin: 5px;
+  .link{
+    color: #9d4caf;
+    padding: 20px;
+    &:hover{
+      color: #eaa401;
+    }
+  }
 }
 .formulario__iniciar__sesion{
     alt{
@@ -57,4 +78,4 @@ button:hover {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 3%;
    }
-}
+  }
